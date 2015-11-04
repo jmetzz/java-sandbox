@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gs-java8/gs-java8.iml" filepath="$PROJECT_DIR$/gs-java8/gs-java8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-sandbox.iml" filepath="$PROJECT_DIR$/java-sandbox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/legacy-java6/legacy-java6.iml" filepath="$PROJECT_DIR$/legacy-java6/legacy-java6.iml" />
+    </modules>
+  </component>
+</project>
