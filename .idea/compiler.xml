@@ -31,11 +31,21 @@
         <processorPath useClasspath="true" />
         <module name="legacy-java6" />
       </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="java-multi-threading" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="gs-java8" target="1.8" />
+      <module name="java-multi-threading" target="1.5" />
       <module name="java-sandbox" target="1.5" />
       <module name="legacy-java6" target="1.6" />
+      <module name="multi-threading" target="1.5" />
+      <module name="sandbox-java" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
