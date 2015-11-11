@@ -44,7 +44,7 @@ public abstract class AbstractDataRetrieve<R, T> implements IBatchDataRetrieve<R
         return results;
     }
 
-    protected void logMessages(List<Message> messages, String serviceName) {
+    protected void logMessages(List<IMessage> messages, String serviceName) {
         LOGGER.info(serviceName + " - " + messages);
     }
 
