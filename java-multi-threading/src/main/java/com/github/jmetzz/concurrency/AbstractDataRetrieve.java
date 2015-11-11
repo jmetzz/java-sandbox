@@ -29,7 +29,7 @@ public abstract class AbstractDataRetrieve<R, T> implements IBatchDataRetrieve<R
 
         final Map<String, R> results = new HashMap<String, R>();
 
-        // TODO : apply guava fluent iterator...
+        // TODO :  apply guava fluent iterator...
         for (String key : workingDatas.keySet()) {
             try {
                 final RetrieverResult<R> result = getRetrieverResult(key);
