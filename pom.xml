@@ -15,6 +15,7 @@
         <module>gs-java8</module>
         <module>legacy-java6</module>
         <module>java-multi-threading</module>
+        <module>gs-javaws</module>
     </modules>
 
     <properties>

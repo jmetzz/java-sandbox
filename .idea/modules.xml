@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/gs-java8/gs-java8.iml" filepath="$PROJECT_DIR$/gs-java8/gs-java8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gs-javaws/gs-javaws.iml" filepath="$PROJECT_DIR$/gs-javaws/gs-javaws.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-multi-threading/java-multi-threading.iml" filepath="$PROJECT_DIR$/java-multi-threading/java-multi-threading.iml" />
       <module fileurl="file://$PROJECT_DIR$/legacy-java6/legacy-java6.iml" filepath="$PROJECT_DIR$/legacy-java6/legacy-java6.iml" />
       <module fileurl="file://$PROJECT_DIR$/sandbox-java.iml" filepath="$PROJECT_DIR$/sandbox-java.iml" />
