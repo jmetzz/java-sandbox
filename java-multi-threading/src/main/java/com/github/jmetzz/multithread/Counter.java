@@ -3,19 +3,19 @@ package com.github.jmetzz.multithread;
 /**
  * Created by Jean Metz.
  */
-public class SynchronizedCounter {
+public class Counter {
 
     private int c = 0;
 
-    public synchronized void increment() {
+    public void increment() {
         c++;
     }
 
-    public synchronized void decrement() {
+    public void decrement() {
         c--;
     }
 
-    public synchronized int value() {
+    public int value() {
         return c;
     }
 

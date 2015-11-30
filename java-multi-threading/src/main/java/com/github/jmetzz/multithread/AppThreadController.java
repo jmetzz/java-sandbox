@@ -8,23 +8,23 @@ import java.util.Random;
 public class AppThreadController {
 
     public static void main(String[] args) throws InterruptedException {
-
-        System.out.println("Main thread general info: ");
-        System.out.println("\tid = " + Thread.currentThread().getId());
-        System.out.println("\tname = " + Thread.currentThread().getName());
-        System.out.println("\tpriority = " + Thread.currentThread().getPriority());
-        System.out.println("\tstate = " + Thread.currentThread().getState());
-        System.out.println("\tthreadGroupName = " + Thread.currentThread().getThreadGroup().getName());
-
-        runExample1();
-
-        runExample2();
-
-        interruptExample();
-
-        joinExample();
-
-        notSynchronizedCounterExample();
+//
+//        System.out.println("Main thread general info: ");
+//        System.out.println("\tid = " + Thread.currentThread().getId());
+//        System.out.println("\tname = " + Thread.currentThread().getName());
+//        System.out.println("\tpriority = " + Thread.currentThread().getPriority());
+//        System.out.println("\tstate = " + Thread.currentThread().getState());
+//        System.out.println("\tthreadGroupName = " + Thread.currentThread().getThreadGroup().getName());
+//
+//        runExample1();
+//
+//        runExample2();
+//
+//        interruptExample();
+//
+//        joinExample();
+//
+//        notSynchronizedCounterExample();
 
         synchronizedCounterExample();
 
@@ -130,7 +130,7 @@ public class AppThreadController {
         System.out.println(" --------Synchronized counter Example---------- ");
         Thread[] threads = new Thread[5];
         for (int i = 0; i < threads.length; i++) {
-            threads[i] = new Thread(new SynchronizedCounter(), "thread-" + i);
+            threads[i] = new Thread(new SynchronizedCounterRunnable(), "thread-" + i);
             threads[i].start();
         }
         for (int i = 0; i < threads.length; i++) {

@@ -1,4 +1,4 @@
-package com.github.jmetzz.concurrency.toyExample;
+package com.github.jmetzz.multithread.toyExample;
 
 import org.junit.Test;
 
