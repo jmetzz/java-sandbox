@@ -1,8 +1,9 @@
-package com.github.jmetzz.concurrency.deployable.poolAcknoledge;
+package com.github.jmetzz.concurrency.deployable.poolAcknoledge.scheduler;
+
+import com.github.jmetzz.concurrency.deployable.poolAcknoledge.handler.IHandler;
 
 /**
  * @author Jean Metz.
- *         <p>
  *         Simlulates a timer service to run locally and standalone
  */
 public class Scheduler implements Runnable {

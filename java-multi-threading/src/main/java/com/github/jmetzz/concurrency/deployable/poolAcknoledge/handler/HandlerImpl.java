@@ -1,10 +1,9 @@
-package com.github.jmetzz.concurrency.deployable.poolAcknoledge;
+package com.github.jmetzz.concurrency.deployable.poolAcknoledge.handler;
 
+import com.github.jmetzz.concurrency.deployable.poolAcknoledge.Subscribers;
 import com.google.common.base.MoreObjects;
 import org.apache.log4j.Logger;
 
-import javax.ejb.TransactionAttribute;
-import javax.ejb.TransactionAttributeType;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -19,11 +18,11 @@ public class HandlerImpl implements IHandler {
     private static final Logger LOGGER = Logger
             .getLogger(HandlerImpl.class);
 
-    private static final int MAX_WORKERS = 10;
+    private static final int MAX_TASKS = 10;
     private final CompletionService<Subscribers.Subscriber> completionService;
     private final Subscribers subscribers;
     private /* static */ AtomicInteger count = new AtomicInteger(0);
-    private  /* static */ Map<Subscribers.Subscriber, Integer> allocationMap = Collections.synchronizedMap(new HashMap<Subscribers.Subscriber, Integer>());
+    private  /* static */ Map<Subscribers.Subscriber, Integer> concurrentTasks = Collections.synchronizedMap(new HashMap<Subscribers.Subscriber, Integer>());
 
 
     public HandlerImpl(CompletionService<Subscribers.Subscriber> completionService, Subscribers subscribers) {
@@ -32,12 +31,10 @@ public class HandlerImpl implements IHandler {
     }
 
 
-    @Override
-    @TransactionAttribute(TransactionAttributeType.REQUIRED)
     public void handle() {
         LOGGER.debug("Handling scheduled task.");
 
-        if (count.get() < MAX_WORKERS) {
+        if (count.get() < MAX_TASKS) {
 
             for (int i = 0; i < subscribers.size(); i++) {
                 createWorkers(subscribers.get(i));
@@ -51,8 +48,8 @@ public class HandlerImpl implements IHandler {
                         Subscribers.Subscriber s = result.get();
                         synchronized (this) {
                             count.decrementAndGet();
-                            int qtt = allocationMap.get(s) - 1;
-                            allocationMap.put(s, qtt);
+                            int qtt = concurrentTasks.get(s) - 1;
+                            concurrentTasks.put(s, qtt);
                         }
                     }
                     LOGGER.debug("Tasks completed");
@@ -72,17 +69,17 @@ public class HandlerImpl implements IHandler {
 
     private void createWorkers(Subscribers.Subscriber subscriber) {
 
-        if (!allocationMap.containsKey(subscriber))
-            allocationMap.put(subscriber, 0);
+        if (!concurrentTasks.containsKey(subscriber))
+            concurrentTasks.put(subscriber, 0);
 
-        int w = allocationMap.get(subscriber);
+        int w = concurrentTasks.get(subscriber);
 
-        for (; count.get() < MAX_WORKERS && w <= subscriber.getNumWorkers(); w++) {
-            completionService.submit(new Worker(subscriber));
+        for (; count.get() < MAX_TASKS && w <= subscriber.getNumWorkers(); w++) {
+            completionService.submit(new Task(subscriber));
             count.incrementAndGet();
-            int qtt = allocationMap.get(subscriber);
+            int qtt = concurrentTasks.get(subscriber);
             qtt++;
-            allocationMap.put(subscriber, qtt);
+            concurrentTasks.put(subscriber, qtt);
         }
     }
 
