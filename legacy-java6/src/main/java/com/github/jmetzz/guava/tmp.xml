@@ -1,0 +1,232 @@
+<dossier>
+    <dossier-ref>DBQGWFT</dossier-ref>
+    <distributor>DS</distributor>
+    <first-travel-date>15/11/2015</first-travel-date>
+    <creator-client-version>ITTI.32.0-RC5.2</creator-client-version>
+    <doc-type>SP</doc-type>
+    <ticket id="0" format="680" language="da">
+        <traintype>ICE</traintype>
+        <taco-product-form>acc-epa-seat</taco-product-form>
+        <production_type>PDF_SP</production_type>
+        <origin>DEHGH</origin>
+        <destination>DKNOX</destination>
+        <departure-date>15/11/2015</departure-date>
+        <validity-start-date></validity-start-date>
+        <client_name>sophie</client_name>
+        <client_number>123456</client_number>
+        <direction>H</direction>
+        <ticket_dossierref>1</ticket_dossierref>
+        <to_po>1</to_po>
+        <tcn>087000047</tcn>
+        <rcn>800870000473</rcn>
+        <ebs>N</ebs>
+        <esn>N</esn>
+        <class>2</class>
+        <contractnr></contractnr>
+        <shortcontractcode></shortcontractcode>
+        <return_indicator>S</return_indicator>
+        <tic>RSRA2</tic>
+        <model_type>IR</model_type>
+        <allowed_nr_uses>1</allowed_nr_uses>
+        <rr_dep_time>0928</rr_dep_time>
+        <rr_train_nr>33</rr_train_nr>
+        <inventory>6</inventory>
+        <eticketprovider></eticketprovider>
+        <passenger>
+            <name></name>
+            <first-name></first-name>
+            <date-of-birth></date-of-birth>
+            <reco>N</reco>
+        </passenger>
+        <ticket-field index="1" id="3" value="CIV"/>
+        <ticket-field index="1" id="4" value="1186"/>
+        <ticket-field index="1" id="11" value="01PERSON"/>
+        <ticket-field index="1" id="13" value="15/11"/>
+        <ticket-field index="1" id="14" value="09:28"/>
+        <ticket-field index="1" id="15" value="33"/>
+        <ticket-field index="1" id="16" value="HAMBURG HBF    TT"/>
+        <ticket-field index="1" id="18" value="15/11"/>
+        <ticket-field index="1" id="19" value="14:13"/>
+        <ticket-field index="1" id="20" value="ICE"/>
+        <ticket-field index="1" id="21" value="KOBENHAVN HTT"/>
+        <ticket-field index="1" id="22" value="2"/>
+        <ticket-field index="1" id="23" value=" "/>
+        <ticket-field index="1" id="24" value=" "/>
+        <ticket-field index="1" id="25" value=" "/>
+        <ticket-field index="1" id="26" value="InterCityExpress"/>
+        <ticket-field index="1" id="27" value="VOGN"/>
+        <ticket-field index="1" id="28" value="27 "/>
+        <ticket-field index="1" id="30" value="111 "/>
+        <ticket-field index="1" id="31" value="SIDDE"/>
+        <ticket-field index="1" id="32" value="IKKE RYGER"/>
+        <ticket-field index="1" id="34" value="MOBIL"/>
+        <ticket-field index="1" id="35" value="01W"/>
+        <ticket-field index="1" id="45" value="AGENT"/>
+        <ticket-field index="1" id="46" value=" "/>
+        <ticket-field index="1" id="51" value="800870000473"/>
+        <ticket-field index="1" id="53" value="IR"/>
+        <ticket-field index="1" id="55" value="105E"/>
+        <ticket-field index="1" id="59" value="TOG"/>
+        <ticket-field index="1" id="61" value="1/1"/>
+        <ticket-field index="1" id="62" value="EUR"/>
+        <ticket-field index="1" id="63" value="***7.00"/>
+        <ticket-field index="1" id="65" value="***********"/>
+        <ticket-field index="1" id="66" value="301015"/>
+        <ticket-field index="1" id="67" value="12:32"/>
+        <ticket-field index="1" id="68" value="Kunde Center"/>
+        <ticket-field index="1" id="72" value=" "/>
+        <ticket-field index="1" id="88" value=" "/>
+        <ticket-field index="1" id="89" value="reservation"/>
+        <ticket-field index="1" id="128" value="800870000473"/>
+        <ticket-field index="1" id="178" value="AGENT"/>
+        <ticket-field index="1" id="179" value=" "/>
+        <ticket-field index="1" id="193" value="01"/>
+        <ticket-field index="1" id="700" value="1186"/>
+        <ticket-field index="1" id="701" value="1"/>
+        <ticket-field index="1" id="702" value="1"/>
+        <ticket-field index="1" id="704" value="2"/>
+        <ticket-field index="1" id="705" value="087000047"/>
+        <ticket-field index="1" id="706" value="5"/>
+        <ticket-field index="1" id="707" value="303"/>
+        <ticket-field index="1" id="708" value="0"/>
+        <ticket-field index="1" id="715" value="1"/>
+        <ticket-field index="1" id="716" value="108001071"/>
+        <ticket-field index="1" id="717" value="118600626"/>
+        <ticket-field index="1" id="724" value="16"/>
+        <ticket-field index="1" id="725" value="568"/>
+        <ticket-field index="1" id="726" value="33"/>
+        <ticket-field index="1" id="727" value="27 "/>
+        <ticket-field index="1" id="728" value="111 "/>
+        <ticket-field index="1" id="729" value="0"/>
+        <ticket-field index="1" id="732" value="00000000000000"/>
+        <ticket-field index="1" id="733" value="DBQGWFT00"/>
+        <linkedBill>01</linkedBill>
+        <payment transaction-code="1244515">
+            <time-of-payment>30/10/2015 12:32:28</time-of-payment>
+            <payment-method-code>AG</payment-method-code>
+            <amount-paid>91.40</amount-paid>
+            <cc-number></cc-number>
+        </payment>
+        <paymentMethod>AG</paymentMethod>
+        <ticket-seat>
+            <seatId></seatId>
+            <coachType>02</coachType>
+            <coachNbr>27</coachNbr>
+            <spaceType></spaceType>
+            <nbrSpaceType></nbrSpaceType>
+            <compartmentType>43</compartmentType>
+            <bedTypeSex></bedTypeSex>
+            <epaSeatRange>111</epaSeatRange>
+            <rrPassengerId></rrPassengerId>
+            <rrSeatNbr></rrSeatNbr>
+        </ticket-seat>
+    </ticket>
+    <ticket id="1" format="681" language="da">
+        <traintype>NVS</traintype>
+        <taco-product-form>adm-nvs</taco-product-form>
+        <production_type>PDF_SP</production_type>
+        <origin>DEHGH</origin>
+        <destination>DKNOX</destination>
+        <departure-date>15/11/2015</departure-date>
+        <validity-start-date></validity-start-date>
+        <client_name>sophie</client_name>
+        <client_number>123456</client_number>
+        <direction>H</direction>
+        <ticket_dossierref>1</ticket_dossierref>
+        <to_po>1</to_po>
+        <tcn>01722758511</tcn>
+        <rcn>01722758511</rcn>
+        <ebs>N</ebs>
+        <esn>N</esn>
+        <class>2</class>
+        <contractnr></contractnr>
+        <shortcontractcode></shortcontractcode>
+        <return_indicator>S</return_indicator>
+        <tic>BUSA2</tic>
+        <model_type>NT</model_type>
+        <allowed_nr_uses>1</allowed_nr_uses>
+        <rr_dep_time></rr_dep_time>
+        <rr_train_nr></rr_train_nr>
+        <inventory></inventory>
+        <eticketprovider></eticketprovider>
+        <passenger>
+            <name></name>
+            <first-name></first-name>
+            <date-of-birth></date-of-birth>
+            <reco>N</reco>
+        </passenger>
+        <ticket-field index="1" id="4" value="AGENT"/>
+        <ticket-field index="1" id="8" value="Refundering med begr&#230;nsninger."/>
+        <ticket-field index="1" id="12" value="Kunde Center"/>
+        <ticket-field index="1" id="13" value="301015"/>
+        <ticket-field index="1" id="14" value="105E"/>
+        <ticket-field index="1" id="15" value="Hamburg"/>
+        <ticket-field index="1" id="16" value="Koebenhavn H"/>
+        <ticket-field index="1" id="18" value="*****"/>
+        <ticket-field index="1" id="19" value="*****"/>
+        <ticket-field index="1" id="21" value="VIA: &lt;1080&gt;OD*HL*OLD*PUTT*Puttgarden(MS)&lt;1186&gt;"/>
+        <ticket-field index="1" id="29" value="NORMAL PRIS"/>
+        <ticket-field index="1" id="31" value="EUR"/>
+        <ticket-field index="1" id="32" value="***"/>
+        <ticket-field index="1" id="33" value="***84.40"/>
+        <ticket-field index="1" id="34" value="***********"/>
+        <ticket-field index="1" id="36" value="GYLDIG:15.11.15-29.11.15"/>
+        <ticket-field index="1" id="37" value="2"/>
+        <ticket-field index="1" id="38" value="1186"/>
+        <ticket-field index="1" id="41" value="0172"/>
+        <ticket-field index="1" id="46" value=" "/>
+        <ticket-field index="1" id="54" value="2758511"/>
+        <ticket-field index="1" id="56" value="1 ADULT"/>
+        <ticket-field index="1" id="88" value="ICE BILLET"/>
+        <ticket-field index="1" id="89" value="BILLET"/>
+        <ticket-field index="1" id="90" value="105E"/>
+        <ticket-field index="1" id="128" value="01722758511"/>
+        <ticket-field index="1" id="184" value="2758511"/>
+        <ticket-field index="1" id="700" value="1186"/>
+        <ticket-field index="1" id="701" value="2"/>
+        <ticket-field index="1" id="702" value="1"/>
+        <ticket-field index="1" id="703" value="0"/>
+        <ticket-field index="1" id="704" value="2"/>
+        <ticket-field index="1" id="705" value="01722758511"/>
+        <ticket-field index="1" id="706" value="5"/>
+        <ticket-field index="1" id="707" value="303"/>
+        <ticket-field index="1" id="711" value="16"/>
+        <ticket-field index="1" id="712" value="30"/>
+        <ticket-field index="1" id="715" value="1"/>
+        <ticket-field index="1" id="716" value="108001071"/>
+        <ticket-field index="1" id="717" value="118600626"/>
+        <ticket-field index="1" id="732" value="00000000000000"/>
+        <ticket-field index="1" id="733" value="DBQGWFT01"/>
+        <linkedReservation>
+            <reservationId>02</reservationId>
+            <ticketId>0</ticketId>
+            <supplier>ICE</supplier>
+            <origin>DEHGH</origin>
+            <destination>DKNOX</destination>
+            <destDate>15/11</destDate>
+            <orgDate>15/11</orgDate>
+            <price>7</price>
+            <departureTime>09u28</departureTime>
+            <arrivalTime>14u13</arrivalTime>
+            <trainNbr>33</trainNbr>
+            <coachNbr>27</coachNbr>
+            <epaSeatRange>111</epaSeatRange>
+            <rcn>800870000473</rcn>
+            <accomodationType>SE</accomodationType>
+        </linkedReservation>
+        <linkedBill></linkedBill>
+        <payment transaction-code="1244515">
+            <time-of-payment>30/10/2015 12:32:28</time-of-payment>
+            <payment-method-code>AG</payment-method-code>
+            <amount-paid>91.40</amount-paid>
+            <cc-number></cc-number>
+        </payment>
+        <paymentMethod>AG</paymentMethod>
+    </ticket>
+    <payment transaction-code="1244515">
+        <time-of-payment>30/10/2015 12:32:28</time-of-payment>
+        <payment-method-code>AG</payment-method-code>
+        <amount-paid>91.40</amount-paid>
+        <cc-number></cc-number>
+    </payment>
+</dossier>

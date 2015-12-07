@@ -6,6 +6,7 @@ import com.github.tomakehurst.wiremock.WireMockServer;
 import com.github.tomakehurst.wiremock.client.WireMock;
 import com.github.tomakehurst.wiremock.core.Options;
 import com.github.tomakehurst.wiremock.core.WireMockConfiguration;
+import org.apache.http.HttpEntity;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -67,6 +68,8 @@ public class WireMockTest {
                         .withBody("<response>Some content</response>"))
         );
 
+        getRequestedFor(urlEqualTo("/some/thing"));
+
         assertThat(testClient.get("/some/thing", new TestHttpHeader("Accept", "text/xml")).statusCode()).isEqualTo(200);
         assertThat(testClient.get("/some/thing/else").statusCode()).isEqualTo(404);
 
@@ -85,4 +88,13 @@ public class WireMockTest {
         assertThat(testClient.get("/some/thing").statusCode()).isEqualTo(200);
         assertThat(testClient.get("/some/thing/else").statusCode()).isEqualTo(404);
     }
+
+    @Test
+    public void xpathWithNamespaces() {
+        stubFor(put(urlEqualTo("/namespaced/xpath"))
+                .withRequestBody(matchingXPath("/stuff:outer/stuff:inner[.=111]")
+                        .withXPathNamespace("stuff", "http://foo.com"))
+                .willReturn(aResponse().withStatus(200)));
+    }
+
 }

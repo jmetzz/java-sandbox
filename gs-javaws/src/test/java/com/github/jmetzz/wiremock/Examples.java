@@ -93,8 +93,8 @@ public class Examples extends AcceptanceTestBase {
     public void bodyFile() {
         stubFor(get(urlEqualTo("/body-file"))
                 .willReturn(aResponse()
-                        .withBodyFile("path/to/myfile.xml")));
-    }
+    .withBodyFile("path/to/myfile.xml")));
+}
 
     @Test
     public void binaryBody() {
