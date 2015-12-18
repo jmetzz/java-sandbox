@@ -1,0 +1,12 @@
+[
+  {
+    "name": "A",
+    "numWorkers": "3",
+    "url": "localhost"
+  },
+  {
+    "name": "B",
+    "numWorkers": "1",
+    "url": "localhost"
+  }
+]
