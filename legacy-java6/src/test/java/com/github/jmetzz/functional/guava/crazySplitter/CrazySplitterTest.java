@@ -1,4 +1,4 @@
-package com.github.jmetzz.guava;
+package com.github.jmetzz.functional.guava.crazySplitter;
 
 import org.junit.Test;
 
