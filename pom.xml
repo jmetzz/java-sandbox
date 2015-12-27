@@ -16,6 +16,7 @@
         <module>legacy-java6</module>
         <module>java-multi-threading</module>
         <module>gs-javaws</module>
+        <module>design-patterns</module>
     </modules>
 
     <properties>
