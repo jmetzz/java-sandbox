@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.github.jmetzz.javasandbox</groupId>
-        <artifactId>sandbox-parent</artifactId>
-        <version>1.0</version>
+        <artifactId>sandbox-java</artifactId>
+        <groupId>com.github.jmetzz</groupId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>legacy-java6</artifactId>

@@ -34,14 +34,12 @@
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="gs-javaws" />
       </profile>
       <profile default="false" name="Annotation profile for gs-java8" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="gs-java8" />
       </profile>
       <profile default="false" name="Annotation profile for design-patterns" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
