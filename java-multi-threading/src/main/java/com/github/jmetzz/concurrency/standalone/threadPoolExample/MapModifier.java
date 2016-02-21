@@ -17,7 +17,7 @@ public class MapModifier implements Runnable {
     @Override
     public void run() {
         // do some update in the map structure
-        for (int i = 0; i < 500000; i++) {
+        for (int i = 0; i < 5000; i++) {
             Integer rand = (int) Math.ceil(Math.random() * 550000);
 
             // Retrieve value. We are not using it anywhere

@@ -37,11 +37,11 @@ public class AppFixedThreadPool {
         System.out.println("Test started for: " + map.getClass());
         long averageTime = 0;
         //iterate 10 times to get the average time
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
 
             long startTime = System.nanoTime();
             ExecutorService executorService = Executors.newFixedThreadPool(THREAD_POOL_SIZE);
-            for (int j = 0; j < THREAD_POOL_SIZE; j++) {
+            for (int j = 0; j < THREAD_POOL_SIZE * 2; j++) {
                 executorService.execute(new MapModifier(map));
             }
 
