@@ -17,6 +17,7 @@
         <module>legacy-java6</module>
         <module>java-multi-threading</module>
         <module>design-patterns</module>
+        <module>refactoring</module>
     </modules>
 
     <properties>

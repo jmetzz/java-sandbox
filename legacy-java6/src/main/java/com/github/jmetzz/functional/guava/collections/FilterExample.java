@@ -4,9 +4,11 @@ import com.google.common.base.Function;
 import com.google.common.base.Predicates;
 import com.google.common.collect.Collections2;
 import com.google.common.collect.FluentIterable;
+import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -38,6 +40,15 @@ public class FilterExample {
         System.out.println("==============");
         FluentIterable<Passenger> it = FluentIterable.from(passengers);
         System.out.println(it.transform(extracType).filter(Predicates.in(filterCriteria)).toList());
+
+
+        String[] array = {};
+
+
+        List<String> list = Lists.newArrayList(array);
+        System.out.println(list);
+
+        System.out.println(String.valueOf(true));
 
     }
 
