@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/design-patterns/design-patterns.iml" filepath="$PROJECT_DIR$/design-patterns/design-patterns.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gs-java8/gs-java8.iml" filepath="$PROJECT_DIR$/gs-java8/gs-java8.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java-multi-threading/java-multi-threading.iml" filepath="$PROJECT_DIR$/java-multi-threading/java-multi-threading.iml" />
-      <module fileurl="file://$PROJECT_DIR$/legacy-java6/legacy-java6.iml" filepath="$PROJECT_DIR$/legacy-java6/legacy-java6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithms-and-challenges-lab/algorithms-and-challenges.iml" filepath="$PROJECT_DIR$/algorithms-and-challenges-lab/algorithms-and-challenges.iml" />
+      <module fileurl="file://$PROJECT_DIR$/concurrency-lab/concurrency-lab.iml" filepath="$PROJECT_DIR$/concurrency-lab/concurrency-lab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design-patterns-lab/design-patterns.iml" filepath="$PROJECT_DIR$/design-patterns-lab/design-patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generics-lab/generics-lab.iml" filepath="$PROJECT_DIR$/generics-lab/generics-lab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/legacy-java6-lab/legacy-java6-lab.iml" filepath="$PROJECT_DIR$/legacy-java6-lab/legacy-java6-lab.iml" />
       <module fileurl="file://$PROJECT_DIR$/sandbox-java.iml" filepath="$PROJECT_DIR$/sandbox-java.iml" />
     </modules>
   </component>

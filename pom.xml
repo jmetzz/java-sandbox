@@ -13,11 +13,11 @@
     <description>Multi Module Parent Project</description>
 
     <modules>
-        <module>gs-java8</module>
-        <module>legacy-java6</module>
-        <module>java-multi-threading</module>
-        <module>design-patterns</module>
-        <module>refactoring</module>
+        <module>legacy-java6-lab</module>
+        <module>concurrency-lab</module>
+        <module>design-patterns-lab</module>
+        <module>algorithms-and-challenges-lab</module>
+        <module>generics-lab</module>
     </modules>
 
     <properties>
