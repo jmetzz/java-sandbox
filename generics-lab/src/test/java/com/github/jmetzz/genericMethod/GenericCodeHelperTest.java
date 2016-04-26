@@ -23,9 +23,6 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 @RunWith(Parameterized.class)
 public class GenericCodeHelperTest {
 
-    private String constructArg;
-    private Class clazz;
-    private Predicate predicate;
 
     @Parameters
     public static Collection<Object[]> data(){
@@ -36,11 +33,14 @@ public class GenericCodeHelperTest {
         });
     }
 
-    public GenericCodeHelperTest(Class clazz, String arg, Predicate predicate){
-        this.clazz = clazz;
-        this.constructArg = arg;
-        this.predicate = predicate;
-    }
+    @Parameterized.Parameter(value = 0)
+    public Class clazz;
+
+    @Parameterized.Parameter(value = 1)
+    public String constructArg;
+
+    @Parameterized.Parameter(value = 2)
+    public Predicate predicate;
 
 
     @Test
