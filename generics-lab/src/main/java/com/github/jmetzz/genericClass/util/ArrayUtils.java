@@ -1,11 +1,13 @@
-package com.github.jmetzz.generics;
+package com.github.jmetzz.genericClass.util;
+
+import com.github.jmetzz.genericClass.tuple.SingleTypePair;
 
 /**
  * Created by Jean Metz.
  */
 public class ArrayUtils {
 
-    public static <T extends Comparable> Pair<T> minmax1(T[] a) {
+    public static <T extends Comparable> SingleTypePair<T> minmax1(T[] a) {
         if ((a == null) || (a.length == 0))
             return null;
 
@@ -18,10 +20,10 @@ public class ArrayUtils {
             if (max.compareTo(element) < 0)
                 max = element;
         }
-        return new Pair<T>(min, max);
+        return new SingleTypePair<T>(min, max);
     }
 
-    public static <T extends Comparable<T>> Pair<T> minmax2(T[] a) {
+    public static <T extends Comparable<T>> SingleTypePair<T> minmax2(T[] a) {
         if ((a == null) || (a.length == 0))
             return null;
 
@@ -34,10 +36,10 @@ public class ArrayUtils {
             if (max.compareTo(element) < 0)
                 max = element;
         }
-        return new Pair<T>(min, max);
+        return new SingleTypePair<T>(min, max);
     }
 
-    public static <T extends Comparable<? super T>> Pair<T> minmax3(T[] a) {
+    public static <T extends Comparable<? super T>> SingleTypePair<T> minmax3(T[] a) {
         if ((a == null) || (a.length == 0))
             return null;
 
@@ -50,21 +52,21 @@ public class ArrayUtils {
             if (max.compareTo(element) < 0)
                 max = element;
         }
-        return new Pair<T>(min, max);
+        return new SingleTypePair<T>(min, max);
     }
 
     /*
-    You can even use wildcards with no bounds at all, for example, Pair<?>.
-    At first glance, this looks identical to the raw Pair type.
-    Actually, the types are very different. The type Pair<?> has methods such as:
+    You can even use wildcards with no bounds at all, for example, SingleTypePair<?>.
+    At first glance, this looks identical to the raw SingleTypePair type.
+    Actually, the types are very different. The type SingleTypePair<?> has methods such as:
     ? getLeft()
     void setLeft(?)
     The return value of getLeft can only be assigned to an Object. The setLeft method can
     never be called, not even with an Object.
-    That’s the essential difference between Pair<?> and Pair:
-        you can call the setObject method of the raw Pair class with any Object
+    That’s the essential difference between SingleTypePair<?> and SingleTypePair:
+        you can call the setObject method of the raw SingleTypePair class with any Object
     */
-    public static Pair minmax0(Object[] a) {
+    public static SingleTypePair minmax0(Object[] a) {
         if ((a == null) || (a.length == 0))
             return null;
 
@@ -80,7 +82,7 @@ public class ArrayUtils {
             if (max.compareTo(element) < 0)
                 max = element;
         }
-        return new Pair(min, max);
+        return new SingleTypePair(min, max);
     }
 
 

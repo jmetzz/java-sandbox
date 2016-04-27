@@ -1,4 +1,7 @@
-package com.github.jmetzz.generics;
+package com.github.jmetzz.genericClass.shape;
+
+import com.github.jmetzz.genericClass.tuple.HomogeneousPair;
+import com.github.jmetzz.genericClass.tuple.SingleTypePair;
 
 /**
  * Created by Jean Metz.
@@ -6,13 +9,13 @@ package com.github.jmetzz.generics;
 public class TwoDPoint<T extends Number> implements Comparable<TwoDPoint> {
 
 
-    private Pair<T> coordinate;
+    private HomogeneousPair<T> coordinate;
 
     public TwoDPoint() {
-        coordinate = new Pair<T>();
+        coordinate = new SingleTypePair<T>();
     }
 
-    public TwoDPoint(Pair<T> c) {
+    public TwoDPoint(SingleTypePair<T> c) {
         this.coordinate = c;
     }
 

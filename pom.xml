@@ -18,6 +18,7 @@
         <module>design-patterns-lab</module>
         <module>algorithms-and-challenges-lab</module>
         <module>generics-lab</module>
+        <module>lambdas-and-streams-lab</module>
     </modules>
 
     <properties>

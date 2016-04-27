@@ -53,6 +53,4 @@ public class GenericCodeHelperTest {
         assertThat(c1.getValue()).isEqualTo(constructArg);
     }
 
-
-
 }

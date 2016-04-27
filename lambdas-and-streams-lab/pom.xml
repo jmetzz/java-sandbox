@@ -9,22 +9,19 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>generics-lab</artifactId>
-
+    <artifactId>lambdas-and-streams-lab</artifactId>
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>${version.java}</source>
-                    <target>${version.java}</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-
-
     <dependencies>
 
         <dependency>
@@ -32,7 +29,6 @@
             <artifactId>guava</artifactId>
             <version>${version.guava}</version>
         </dependency>
-
 
         <dependency>
             <groupId>junit</groupId>
@@ -46,6 +42,7 @@
             <version>${version.assertj}</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
 

@@ -10,10 +10,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>legacy-java6</artifactId>
+    <artifactId>legacy-java6-lab</artifactId>
     <packaging>jar</packaging>
 
-    <name>legacy-java6</name>
+    <name>legacy-java6-lab</name>
 
     <build>
         <pluginManagement>

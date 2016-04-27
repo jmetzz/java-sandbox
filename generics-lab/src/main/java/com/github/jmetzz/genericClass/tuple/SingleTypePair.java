@@ -1,19 +1,19 @@
-package com.github.jmetzz.generics;
+package com.github.jmetzz.genericClass.tuple;
 
 import com.google.common.base.MoreObjects;
-
-import java.io.Serializable;
 
 /**
  * Created by Jean Metz.
  */
-public class BoundedPair<T extends Comparable & Serializable> {
+public class SingleTypePair<T> implements HomogeneousPair<T> {
 
     private T left;
     private T right;
 
+    public SingleTypePair() {
+    }
 
-    public BoundedPair(T left, T right) {
+    public SingleTypePair(T left, T right) {
         this.left = left;
         this.right = right;
     }

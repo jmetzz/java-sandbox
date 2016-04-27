@@ -96,6 +96,13 @@
         <processorPath useClasspath="true" />
         <module name="generics-lab" />
       </profile>
+      <profile default="false" name="Annotation profile for lambdas-and-streams-lab" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="lambdas-and-streams-lab" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="algorithms-and-challenges" target="1.8" />
@@ -109,6 +116,7 @@
       <module name="gs-javaws" target="1.8" />
       <module name="java-multi-threading" target="1.6" />
       <module name="java-sandbox" target="1.5" />
+      <module name="lambdas-and-streams-lab" target="1.8" />
       <module name="legacy-java6" target="1.6" />
       <module name="legacy-java6-lab" target="1.6" />
       <module name="multi-threading" target="1.5" />
