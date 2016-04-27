@@ -2,6 +2,7 @@ package com.github.jmetzz.genericClass.shape;
 
 import com.github.jmetzz.genericClass.tuple.HomogeneousPair;
 import com.github.jmetzz.genericClass.tuple.SingleTypePair;
+import com.google.common.base.MoreObjects;
 
 /**
  * Created by Jean Metz.
@@ -46,5 +47,14 @@ public class TwoDPoint<T extends Number> implements Comparable<TwoDPoint> {
     @Override
     public int compareTo(TwoDPoint o) {
         return this.norm().compareTo(o.norm());
+    }
+
+
+    @Override
+    public String toString() {
+        return MoreObjects.toStringHelper(this)
+                .add("x", getX())
+                .add("y", getY())
+                .toString();
     }
 }

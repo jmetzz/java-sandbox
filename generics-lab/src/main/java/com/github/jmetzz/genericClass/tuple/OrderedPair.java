@@ -1,6 +1,6 @@
 package com.github.jmetzz.genericClass.tuple;
 
-public class AnyTypePair<K, V> implements HeterogeneousPair<K, V> {
+public class OrderedPair<K, V> implements HeterogeneousPair<K, V> {
 
     private K left;
 
