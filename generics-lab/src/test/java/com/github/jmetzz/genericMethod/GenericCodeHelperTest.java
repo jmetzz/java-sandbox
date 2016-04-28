@@ -1,7 +1,7 @@
 package com.github.jmetzz.genericMethod;
 
 
-import com.github.jmetzz.genericMethod.pojo.CodeBaseClass;
+import com.github.jmetzz.genericMethod.pojo.BaseCode;
 import com.github.jmetzz.genericMethod.pojo.ContractCode;
 import com.github.jmetzz.genericMethod.pojo.CountryCode;
 import com.github.jmetzz.genericMethod.pojo.GenderCode;
@@ -45,7 +45,8 @@ public class GenericCodeHelperTest {
 
     @Test
     public void shouldCreateContractCode() throws InstantiationException, IllegalAccessException {
-        CodeBaseClass c1 = GenericCodeHelper.getCodeFor(clazz, constructArg);
+        BaseCode c1 = GenericCodeHelper.getCodeFor(clazz, constructArg);
+
         assertThat(c1)
                 .isNotNull()
                 .matches(CodeHelper.APPLICATION_PREDICATE)

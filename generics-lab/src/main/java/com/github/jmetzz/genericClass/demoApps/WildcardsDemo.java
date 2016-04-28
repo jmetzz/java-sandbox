@@ -1,4 +1,4 @@
-package com.github.jmetzz.genericClass;
+package com.github.jmetzz.genericClass.demoApps;
 
 import java.util.List;
 

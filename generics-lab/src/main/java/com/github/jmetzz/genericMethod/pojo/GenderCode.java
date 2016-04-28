@@ -3,7 +3,7 @@ package com.github.jmetzz.genericMethod.pojo;
 
 import java.util.function.Predicate;
 
-public class GenderCode extends CodeBaseClass {
+public class GenderCode extends BaseCode {
 
     public static final Predicate<CountryCode> COUNTRY_CODE_PREDICATE = new Predicate<CountryCode>() {
         @Override

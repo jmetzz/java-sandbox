@@ -2,7 +2,7 @@ package com.github.jmetzz.genericClass.container;
 
 import com.google.common.base.MoreObjects;
 
-public abstract class AbstractBox<T> implements Container<T> {
+public class GenericBox<T> implements Container<T>, Inspectable<T> {
 
     private final double width;
     private final double lenght;
@@ -11,7 +11,7 @@ public abstract class AbstractBox<T> implements Container<T> {
 
     private T content;
 
-    public AbstractBox(double width, double lenght, double height, String build) {
+    public GenericBox(double width, double lenght, double height, String build) {
         this.width = width;
         this.lenght = lenght;
         this.height = height;
@@ -39,7 +39,7 @@ public abstract class AbstractBox<T> implements Container<T> {
     }
 
     @Override
-    public double lenght() {
+    public double length() {
         return this.lenght;
     }
 
@@ -53,10 +53,16 @@ public abstract class AbstractBox<T> implements Container<T> {
     }
 
     @Override
+    public <U extends T> void inspect(U u) {
+        System.out.println("this - T: " + get().getClass().getName());
+        System.out.println("other - U: " + u.getClass().getName());
+    }
+
+    @Override
     public String toString() {
         return MoreObjects.toStringHelper(this)
                 .add("width", width)
-                .add("lenght", lenght)
+                .add("length", lenght)
                 .add("height", height)
                 .add("build", build)
                 .add("content", content)

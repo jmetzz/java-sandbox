@@ -4,6 +4,9 @@ import com.github.jmetzz.genericClass.tuple.SingleTypePair;
 
 /**
  * Created by Jean Metz.
+ *
+ * Utility class used to illustrate the usage of Java Generics
+ *
  */
 public class ArrayUtils {
 

@@ -10,7 +10,7 @@ public interface Container<T> {
 
     double width();
 
-    double lenght();
+    double length();
 
     double height();
 

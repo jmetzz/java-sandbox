@@ -1,6 +1,6 @@
 package com.github.jmetzz.genericMethod;
 
-import com.github.jmetzz.genericMethod.pojo.CodeBaseClass;
+import com.github.jmetzz.genericMethod.pojo.BaseCode;
 import com.github.jmetzz.genericMethod.pojo.ContractCode;
 import com.github.jmetzz.genericMethod.pojo.CountryCode;
 import com.github.jmetzz.genericMethod.pojo.GenderCode;
@@ -11,9 +11,9 @@ public class CodeHelper {
 
     public static final String APPLICATION = "MyApplication";
 
-    public static final Predicate<CodeBaseClass> APPLICATION_PREDICATE = new Predicate<CodeBaseClass>() {
+    public static final Predicate<BaseCode> APPLICATION_PREDICATE = new Predicate<BaseCode>() {
         @Override
-        public boolean test(CodeBaseClass code) {
+        public boolean test(BaseCode code) {
             return code.getApp().compareToIgnoreCase(CodeHelper.APPLICATION) == 0;
         }
     };

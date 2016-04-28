@@ -19,10 +19,6 @@ import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
  */
 public class ArrayUtilsTest {
 
-
-    // TODO - test upper and lower bound with generic classes and methods
-
-
     private static final GregorianCalendar[] birthdays = {
             new GregorianCalendar(1906, Calendar.DECEMBER, 9), // G. Hopper
             new GregorianCalendar(1815, Calendar.DECEMBER, 10), // A. Lovelace
@@ -136,6 +132,9 @@ public class ArrayUtilsTest {
         * */
         SingleTypedBoundedPair<Integer> ibPair = new SingleTypedBoundedPair<Integer>(3, 5);
     }
+
+    // TODO - test upper and lower bound with generic classes and methods
+
 
 
 }

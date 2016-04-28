@@ -2,7 +2,7 @@ package com.github.jmetzz.genericMethod.pojo;
 
 import java.io.Serializable;
 
-public class CodeBaseClass implements Serializable {
+public class BaseCode implements Serializable {
 
     private final static long serialVersionUID = 99846115699L;
 
@@ -12,7 +12,7 @@ public class CodeBaseClass implements Serializable {
 
     private String value;
 
-    public CodeBaseClass(String type) {
+    public BaseCode(String type) {
         this.type = type;
     }
 

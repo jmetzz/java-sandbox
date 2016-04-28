@@ -2,7 +2,7 @@ package com.github.jmetzz.genericMethod.pojo;
 
 import java.util.function.Predicate;
 
-public class ContractCode extends CodeBaseClass {
+public class ContractCode extends BaseCode {
 
 
     public static final Predicate<ContractCode> CONTRACT_CODE_PREDICATE = new Predicate<ContractCode>() {

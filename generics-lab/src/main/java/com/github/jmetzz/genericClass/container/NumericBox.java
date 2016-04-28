@@ -1,8 +1,8 @@
 package com.github.jmetzz.genericClass.container;
 
-public class IntegerBox<T extends Integer> extends GenericBox<T> {
+public class NumericBox<T extends Number> extends GenericBox<T> {
 
-    public IntegerBox(double width, double lenght, double height, String build) {
+    public NumericBox(double width, double lenght, double height, String build) {
         super(width, lenght, height, build);
     }
 
@@ -11,6 +11,5 @@ public class IntegerBox<T extends Integer> extends GenericBox<T> {
         System.out.println("T: " + get().getClass().getName());
         System.out.println("U: " + u.getClass().getName());
     }
-
 
 }
