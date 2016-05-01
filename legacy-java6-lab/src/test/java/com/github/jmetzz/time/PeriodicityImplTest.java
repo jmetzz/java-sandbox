@@ -179,6 +179,7 @@ public class PeriodicityImplTest {
     }
 
     @Test
+    @Ignore
     public void testIntersection() {
         IntervalSet r = IntervalSets.of(
                 IntervalTestHelper.getInterval("20140101 000000", "20140102 000000"),
@@ -227,6 +228,7 @@ public class PeriodicityImplTest {
     }
 
     @Test
+    @Ignore
     public void testChopMisalignedStart() {
 
         IntervalSet r = IntervalSets.of(
@@ -244,6 +246,7 @@ public class PeriodicityImplTest {
     }
 
     @Test
+    @Ignore
     public void testChopMisalignedStop() {
 
 
@@ -264,6 +267,7 @@ public class PeriodicityImplTest {
     }
 
     @Test
+    @Ignore
     public void testChopMisalignedStartStop() {
 
         IntervalSet r = IntervalSets.of(
