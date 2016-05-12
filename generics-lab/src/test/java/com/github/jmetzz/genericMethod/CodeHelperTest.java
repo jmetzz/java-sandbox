@@ -7,9 +7,9 @@ import com.github.jmetzz.genericMethod.pojo.GenderCode;
 import org.junit.Test;
 
 import static com.github.jmetzz.genericMethod.CodeHelper.APPLICATION_PREDICATE;
-import static com.github.jmetzz.genericMethod.pojo.ContractCode.CONTRACT_CODE_PREDICATE;
-import static com.github.jmetzz.genericMethod.pojo.GenderCode.COUNTRY_CODE_PREDICATE;
-import static com.github.jmetzz.genericMethod.pojo.GenderCode.GENDER_CODE_PREDICATE;
+import static com.github.jmetzz.genericMethod.CodeHelper.CONTRACT_CODE_PREDICATE;
+import static com.github.jmetzz.genericMethod.CodeHelper.COUNTRY_CODE_PREDICATE;
+import static com.github.jmetzz.genericMethod.CodeHelper.GENDER_CODE_PREDICATE;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
 public class CodeHelperTest {

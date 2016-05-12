@@ -1,9 +1,6 @@
 package com.github.jmetzz.genericMethod;
 
-import com.github.jmetzz.genericMethod.pojo.BaseCode;
-import com.github.jmetzz.genericMethod.pojo.ContractCode;
-import com.github.jmetzz.genericMethod.pojo.CountryCode;
-import com.github.jmetzz.genericMethod.pojo.GenderCode;
+import com.github.jmetzz.genericMethod.pojo.*;
 
 import java.util.function.Predicate;
 
@@ -11,12 +8,7 @@ public class CodeHelper {
 
     public static final String APPLICATION = "MyApplication";
 
-    public static final Predicate<BaseCode> APPLICATION_PREDICATE = new Predicate<BaseCode>() {
-        @Override
-        public boolean test(BaseCode code) {
-            return code.getApp().compareToIgnoreCase(CodeHelper.APPLICATION) == 0;
-        }
-    };
+
 
     public static CountryCode getCountryCode(String codeValue) {
         CountryCode code = new CountryCode();
@@ -40,5 +32,33 @@ public class CodeHelper {
         return code;
     }
 
+
+    public static final Predicate<Code> APPLICATION_PREDICATE = new Predicate<Code>() {
+        @Override
+        public boolean test(Code code) {
+            return code.getApp().compareToIgnoreCase(CodeHelper.APPLICATION) == 0;
+        }
+    };
+
+    public static final Predicate<Code> CONTRACT_CODE_PREDICATE = new Predicate<Code>() {
+        @Override
+        public boolean test(Code code) {
+            return (code instanceof ContractCode);
+        }
+    };
+
+    public static final Predicate<Code> COUNTRY_CODE_PREDICATE = new Predicate<Code>() {
+        @Override
+        public boolean test(Code code) {
+            return (code instanceof CountryCode);
+        }
+    };
+
+    public static final Predicate<Code> GENDER_CODE_PREDICATE = new Predicate<Code>() {
+        @Override
+        public boolean test(Code code) {
+            return (code instanceof GenderCode);
+        }
+    };
 
 }

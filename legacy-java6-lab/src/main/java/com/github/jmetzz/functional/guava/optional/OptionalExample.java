@@ -2,7 +2,6 @@ package com.github.jmetzz.functional.guava.optional;
 
 import com.github.jmetzz.functional.guava.pojos.InventoryOrder;
 import com.google.common.base.Optional;
-import com.sun.javafx.scene.control.skin.VirtualFlow;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +11,8 @@ import java.util.List;
  */
 public class OptionalExample {
 
+
+    public static final String DEFAULT = "Null type";
 
     public static void main(String[] args) {
         List<InventoryOrder> list = new ArrayList<InventoryOrder>();
@@ -23,8 +24,8 @@ public class OptionalExample {
 
         Card c = new Card("1111111", null);
         System.out.println(" ---- ");
-        System.out.println(Optional.fromNullable(c.getNumber()).or("Null number"));
-        System.out.println(Optional.fromNullable(c.getType()).or("Null type"));
+        System.out.println(Optional.fromNullable(c.getNumber()).or(DEFAULT));
+        System.out.println(Optional.fromNullable(c.getType()).or(DEFAULT));
 
     }
     private static class Card {

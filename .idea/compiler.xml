@@ -103,6 +103,13 @@
         <processorPath useClasspath="true" />
         <module name="lambdas-and-streams-lab" />
       </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="tdd-lab" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="algorithms-and-challenges" target="1.8" />
@@ -122,6 +129,7 @@
       <module name="multi-threading" target="1.5" />
       <module name="refactoring" target="1.5" />
       <module name="sandbox-java" target="1.5" />
+      <module name="tdd-lab" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

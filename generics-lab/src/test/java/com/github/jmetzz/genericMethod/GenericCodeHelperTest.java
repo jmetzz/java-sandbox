@@ -14,9 +14,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.function.Predicate;
 
-import static com.github.jmetzz.genericMethod.pojo.ContractCode.CONTRACT_CODE_PREDICATE;
-import static com.github.jmetzz.genericMethod.pojo.GenderCode.COUNTRY_CODE_PREDICATE;
-import static com.github.jmetzz.genericMethod.pojo.GenderCode.GENDER_CODE_PREDICATE;
+import static com.github.jmetzz.genericMethod.CodeHelper.*;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 

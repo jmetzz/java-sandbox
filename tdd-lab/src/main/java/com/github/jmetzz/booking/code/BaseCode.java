@@ -1,4 +1,4 @@
-package com.github.jmetzz.genericMethod.pojo;
+package com.github.jmetzz.booking.code;
 
 import com.google.common.collect.ComparisonChain;
 
@@ -8,13 +8,13 @@ public abstract class BaseCode implements Code, Serializable {
 
     private final static long serialVersionUID = 99846115699L;
 
-    private final String type;
+    private final CodeType type;
 
     private String app;
 
     private String value;
 
-    public BaseCode(String type) {
+    public BaseCode(CodeType type) {
         this.type = type;
     }
 
@@ -35,11 +35,11 @@ public abstract class BaseCode implements Code, Serializable {
         this.value = value;
     }
 
-    public String getType(){
+    public CodeType getType(){
         return this.type;
     }
 
-    @Override
+
     public int compareTo(Code other) {
         return ComparisonChain.start()
                 .compare(this.getApp(),  other.getApp())

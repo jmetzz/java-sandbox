@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/lambdas-and-streams-lab/lambdas-and-streams-lab.iml" filepath="$PROJECT_DIR$/lambdas-and-streams-lab/lambdas-and-streams-lab.iml" />
       <module fileurl="file://$PROJECT_DIR$/legacy-java6-lab/legacy-java6-lab.iml" filepath="$PROJECT_DIR$/legacy-java6-lab/legacy-java6-lab.iml" />
       <module fileurl="file://$PROJECT_DIR$/sandbox-java.iml" filepath="$PROJECT_DIR$/sandbox-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tdd-lab/tdd-lab.iml" filepath="$PROJECT_DIR$/tdd-lab/tdd-lab.iml" />
     </modules>
   </component>
 </project>
