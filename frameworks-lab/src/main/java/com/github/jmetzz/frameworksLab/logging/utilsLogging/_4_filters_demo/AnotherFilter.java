@@ -1,13 +1,15 @@
-package com.github.jmetzz.frameworksLab.logging.utilsLogging;/*
+package com.github.jmetzz.frameworksLab.logging.utilsLogging._4_filters_demo;
+
+/*
  * A custom filter provides optional, secondary control 
  * over what is logged, beyond the control that is 
  * provided by the level.
  *
- * This code will register the above log filter with the
- * root Logger's handlers (including the WAS system logs):
+ * This code will register the log filter with the
+ * root Logger's handlers:
  * ...
  * Logger rootLogger = Logger.getLogger("");
- * rootLogger.setFilter(new MyFilter());
+ * rootLogger.setFilter(new AnotherFilter());
  */
 
 /**
@@ -16,13 +18,11 @@ package com.github.jmetzz.frameworksLab.logging.utilsLogging;/*
 import java.util.logging.Filter;
 import java.util.logging.LogRecord;
 
-public class MyFilter implements Filter {
+public class AnotherFilter implements Filter {
 	public boolean isLoggable(LogRecord lr) {
 		String msg = lr.getMessage();
-		if (msg.startsWith("SECJ0222E") || msg.startsWith("SECJ0373E")
-				|| msg.startsWith("SECJ0350E")) {
-			return false;
-		}
-		return true;
+		return !(msg.startsWith("TAG1")
+				|| msg.startsWith("TAG3")
+				|| msg.startsWith("TAG5")) ;
 	}
 }
