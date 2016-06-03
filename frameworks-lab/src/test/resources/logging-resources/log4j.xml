@@ -8,7 +8,7 @@
     </appender>
  
     <appender name="Appender2" class="org.apache.log4j.FileAppender">
-       <param name="File" value="exemplo2.txt" />
+       <param name="File" value="./frameworks-lab/src/test/resources/logging-resources/exemplo2.txt" />
        <layout class="org.apache.log4j.PatternLayout"> 
           <param name="ConversionPattern" value="%-7p %d [%t] %c %x - %m%n"/> 
        </layout> 

@@ -10,39 +10,39 @@
 	</appender>
 
 	<appender name="txt" class="org.apache.log4j.FileAppender">
-		<param name="File" value="exemplo2.txt" />
+		<param name="File" value="./frameworks-lab/src/test/resources/logging-resources/exemplo2.txt" />
 		<layout class="org.apache.log4j.PatternLayout">
 			<param name="ConversionPattern" value="%-6p %d{ISO8601} [%t] %c %x - %m%n" />
 		</layout>
 	</appender>
 
-	<logger name="br.edu.utfpr.metz.app.Log4jXmlTest">
+	<logger name="com.github.jmetzz.log4j.demo.Log4jXmlTest">
 		<level value="INFO" />
 		<appender-ref ref="console" />
 		<appender-ref ref="txt" />
 	</logger>
 
-	<logger name="br.edu.utfpr.metz.app">
+	<logger name="com.github.jmetzz.log4j.demo">
 		<level value="WARN" />
 		<appender-ref ref="console" />
 	</logger>
 
-	<logger name="br.edu.utfpr.metz">
+	<logger name="com.github.jmetzz.log4j">
 		<level value="WARN" />
 		<appender-ref ref="console" />
 	</logger>
 
-	<logger name="br.edu.utfpr">
+	<logger name="com.github.jmetzz">
 		<level value="WARN" />
 		<appender-ref ref="console" />
 	</logger>
 	
-	<logger name="br.edu">
+	<logger name="com.github">
 		<level value="WARN" />
 		<appender-ref ref="console" />
 	</logger>
 
-	<logger name="br">
+	<logger name="com">
 		<level value="ERROR" />
 		<appender-ref ref="console" />
 	</logger>
