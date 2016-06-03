@@ -1,18 +1,17 @@
-package com.github.jmetzz.frameworksLab.logging.utilsLogging;
+package com.github.jmetzz.frameworksLab.logging.utilsLogging._3_formatters_demo.formatters;
 
 import java.util.Date;
 import java.util.logging.Formatter;
 import java.util.logging.LogRecord;
 
 /**
- * MyCustomFormatter formats the LogRecord as follows:
+ * MyCustomSimpleFormatter formats the LogRecord as follows:
  * date   level   localized message with parameters 
  */
-public class MyCustomFormatter extends Formatter {
+public class MyCustomSimpleFormatter extends Formatter {
 
-	public MyCustomFormatter() {
+	public MyCustomSimpleFormatter() {
 		super();
-		
 	}
 
 	public String format(LogRecord record) {
