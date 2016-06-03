@@ -1,7 +1,6 @@
-package com.github.jmetzz.frameworksLab.logging.utilsLogging;
+package com.github.jmetzz.frameworksLab.logging.utilsLogging._1_hierarchy_demo;
 
 import java.util.Arrays;
-import java.util.logging.ConsoleHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 

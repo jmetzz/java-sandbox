@@ -1,4 +1,4 @@
-package com.github.jmetzz.frameworksLab.logging.utilsLogging;
+package com.github.jmetzz.frameworksLab.logging.utilsLogging._1_hierarchy_demo;
 
 import java.util.ArrayList;
 import java.util.List;
