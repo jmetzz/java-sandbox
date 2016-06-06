@@ -1,4 +1,4 @@
-package com.github.jmetzz.frameworksLab.logging.utilsLogging._1_hierarchy_demo;
+package com.github.jmetzz.frameworksLab.logging.utils_logging._1_hierarchy_demo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ public class LoggingHierarchyExample {
 	 */
 	public static void main(String[] args) {
 
-		String loggerNames = "br.edu.utfpr.metz.app";
+		String loggerNames = "com.github.jmetzz.logging.app";
 		Logger logger = Logger.getLogger(loggerNames);
 		System.out.println("Logger hierarchy without" +
 				" initializing every level:");

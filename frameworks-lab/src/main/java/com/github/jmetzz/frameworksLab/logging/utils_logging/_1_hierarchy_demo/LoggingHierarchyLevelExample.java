@@ -1,4 +1,4 @@
-package com.github.jmetzz.frameworksLab.logging.utilsLogging._1_hierarchy_demo;
+package com.github.jmetzz.frameworksLab.logging.utils_logging._1_hierarchy_demo;
 
 import java.util.Arrays;
 import java.util.logging.Level;
