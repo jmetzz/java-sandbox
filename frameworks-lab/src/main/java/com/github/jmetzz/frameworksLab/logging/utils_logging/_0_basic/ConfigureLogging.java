@@ -1,4 +1,4 @@
-package com.github.jmetzz.frameworksLab.logging.utilsLogging._0_basic;
+package com.github.jmetzz.frameworksLab.logging.utils_logging._0_basic;
 
 
 import java.util.logging.Logger;
