@@ -1,4 +1,4 @@
-package com.github.jmetzz.frameworksLab.logging.utilsLogging._2_handlers_demo;
+package com.github.jmetzz.frameworksLab.logging.utils_logging._2_handlers_demo;
 
 import java.io.OutputStream;
 import java.util.logging.Logger;
@@ -10,7 +10,7 @@ public class StreamHandlerDemo {
 
     private OutputStream outStream = null;
 
-    private static Logger logger = Logger.getLogger("sam.logging");
+    private static Logger logger = Logger.getLogger(StreamHandlerDemo.class.getName());
 
     public StreamHandlerDemo() {
         outStream = System.out;

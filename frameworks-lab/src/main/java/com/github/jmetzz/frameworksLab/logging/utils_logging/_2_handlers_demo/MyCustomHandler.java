@@ -1,4 +1,4 @@
-package com.github.jmetzz.frameworksLab.logging.utilsLogging._2_handlers_demo;
+package com.github.jmetzz.frameworksLab.logging.utils_logging._2_handlers_demo;
 
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
@@ -11,6 +11,10 @@ import java.util.logging.SimpleFormatter;
  */
 public class MyCustomHandler extends Handler {
 
+    public static final String BASE_PROJECT_URL = "./frameworks-lab/";
+    public static final String PACKAGE_RESOURCES = BASE_PROJECT_URL + "src/test/resources/logging-resources/";
+
+
     FileOutputStream fileOutputStream;
     PrintWriter printWriter;
 
@@ -19,7 +23,7 @@ public class MyCustomHandler extends Handler {
 
         // check input parameter
         if (filename == null || filename == "")
-            filename = "mylogfile.txt";
+            filename = PACKAGE_RESOURCES + "MyCustomHandler_logfile.txt";
 
         try {
             // initialize the file
