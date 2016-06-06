@@ -1,4 +1,4 @@
-package com.github.jmetzz.frameworksLab.logging.utilsLogging._4_filters_demo;
+package com.github.jmetzz.frameworksLab.logging.utils_logging._4_filters_demo;
 
 
 import java.util.logging.Filter;
