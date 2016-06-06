@@ -1,6 +1,6 @@
-package com.github.jmetzz.frameworksLab.logging.utilsLogging._3_formatters_demo.custom_formatter;
+package com.github.jmetzz.frameworksLab.logging.utils_logging._3_formatters_demo;
 
-import com.github.jmetzz.frameworksLab.logging.utilsLogging._3_formatters_demo.formatters.MyCustomHtmlFormatter;
+import com.github.jmetzz.frameworksLab.logging.utils_logging._3_formatters_demo.formatters.MyCustomHtmlFormatter;
 
 import java.io.IOException;
 import java.util.logging.*;

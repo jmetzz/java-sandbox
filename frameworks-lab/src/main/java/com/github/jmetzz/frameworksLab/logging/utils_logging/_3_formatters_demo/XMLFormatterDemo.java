@@ -1,13 +1,18 @@
-package com.github.jmetzz.frameworksLab.logging.utilsLogging._2_handlers_demo.xml;
+package com.github.jmetzz.frameworksLab.logging.utils_logging._3_formatters_demo;
 
+import java.io.IOException;
 import java.util.logging.*;
 
-public class XMLLogging {
+public class XMLFormatterDemo {
+
+	public static final String BASE_PROJECT_URL = "./frameworks-lab/";
+	public static final String PACKAGE_RESOURCES = BASE_PROJECT_URL + "src/test/resources/logging-resources/";
+
 	private ConsoleHandler consoleHandler;
 	private Formatter formatter;
 	private FileHandler handler = null;
 
-	public XMLLogging() {
+	public XMLFormatterDemo() {
 		consoleHandler = new ConsoleHandler();
 		formatter = new XMLFormatter();
 	}
@@ -19,30 +24,27 @@ public class XMLLogging {
 	 */
 	public void logMessage() {
 		// creating a LogRecord object with level and message
-		LogRecord record = new LogRecord(Level.INFO, "XML message..");
+		LogRecord record = new LogRecord(Level.INFO, "XML message...");
 
 		try {
 			// creating a StreamHandler object to file output the xml message
-			handler = new FileHandler("newxml.xml");
+			handler = new FileHandler(PACKAGE_RESOURCES + "newxml.xml");
 			handler.setFormatter(formatter);
 
 			// publishing the log message to the file and flushing the buffer
 			handler.publish(record);
 			handler.flush();
-		} catch (Exception e) {
-			// creating a log record object with the WARNING level
-			// and exception message
+		} catch (IOException  | SecurityException e) {
 			LogRecord rec = new LogRecord(Level.WARNING, e.toString());
-
-			// setting the formatter for the consolehandler as
-			// XMLFormatter and publishing the message
 			consoleHandler.setFormatter(formatter);
 			consoleHandler.publish(rec);
-		}
-	}
+		} finally {
+            handler.close();
+        }
+    }
 
 	public static void main(String args[]) {
-		XMLLogging logging = new XMLLogging();
+		XMLFormatterDemo logging = new XMLFormatterDemo();
 		logging.logMessage();
 	}
 }

@@ -1,4 +1,4 @@
-package com.github.jmetzz.frameworksLab.logging.utilsLogging._3_formatters_demo.formatters;
+package com.github.jmetzz.frameworksLab.logging.utils_logging._3_formatters_demo.formatters;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
