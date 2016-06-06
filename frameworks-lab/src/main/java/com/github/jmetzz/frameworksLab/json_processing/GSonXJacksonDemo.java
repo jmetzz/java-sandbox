@@ -1,8 +1,8 @@
-package com.github.jmetzz.frameworksLab.jsonProcessing;
+package com.github.jmetzz.frameworksLab.json_processing;
 
-import com.github.jmetzz.frameworksLab.jsonProcessing.wrapper.GSonWrapper;
-import com.github.jmetzz.frameworksLab.jsonProcessing.wrapper.JacksonWrapper;
-import com.github.jmetzz.frameworksLab.jsonProcessing.wrapper.JsonParserWrapper;
+import com.github.jmetzz.frameworksLab.json_processing.wrapper.GSonWrapper;
+import com.github.jmetzz.frameworksLab.json_processing.wrapper.JacksonWrapper;
+import com.github.jmetzz.frameworksLab.json_processing.wrapper.JsonParserWrapper;
 
 import java.io.IOException;
 import java.nio.file.Paths;

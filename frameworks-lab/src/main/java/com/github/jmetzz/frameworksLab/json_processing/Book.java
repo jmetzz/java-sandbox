@@ -1,4 +1,4 @@
-package com.github.jmetzz.frameworksLab.jsonProcessing;
+package com.github.jmetzz.frameworksLab.json_processing;
 
 
 import java.util.Map;

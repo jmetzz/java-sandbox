@@ -1,4 +1,4 @@
-package com.github.jmetzz.frameworksLab.jsonProcessing.wrapper;
+package com.github.jmetzz.frameworksLab.json_processing.wrapper;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
