@@ -1,9 +1,8 @@
-package com.github.jmetzz.frameworksLab.logging.utilsLogging._5_resource_bundle_messages;
+package com.github.jmetzz.frameworksLab.logging.utils_logging._5_resource_bundle_messages;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Paths;
-import java.util.Locale;
 import java.util.PropertyResourceBundle;
 import java.util.ResourceBundle;
 import java.util.logging.ConsoleHandler;
