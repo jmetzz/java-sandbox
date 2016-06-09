@@ -1,4 +1,4 @@
-package com.github.jmetzz.httpClient;
+package com.github.jmetzz.javademos.httpClient;
 
 
 import org.apache.commons.codec.binary.Base64;
@@ -24,8 +24,9 @@ import java.io.UnsupportedEncodingException;
 
 public class HttpClientDemo {
 
-    // TODO check this out : http://www.mkyong.com/java/apache-httpclient-examples/
-    // http://www.baeldung.com/httpclient-post-http-request
+    // TODO check this out \
+    // 1. http://www.mkyong.com/java/apache-httpclient-examples/
+    // 2. http://www.baeldung.com/httpclient-post-http-request
 
     private static final Logger LOGGER = Logger.getLogger(HttpClientDemo.class);
 
@@ -37,23 +38,6 @@ public class HttpClientDemo {
     public static final String REQUEST_PARAMETER_RESOURCE_ID = "id";
     public static final String REPLY_PARAMETER_SUCCESS = "success";
 
-
-    public static void main(String[] args) {
-
-        HttpClientDemo demo = new HttpClientDemo();
-
-        String userId = "user";
-        String password = "01234";
-        String resourceId = "01";
-        String distributor = "UPS";
-
-        JSONObject jsonReply = demo.makePostRequest(userId, password, resourceId, distributor);
-        boolean success = (Boolean.parseBoolean((String) jsonReply.get(REPLY_PARAMETER_SUCCESS)))
-                && StringUtils.equals(resourceId, (String) jsonReply.get(REQUEST_PARAMETER_RESOURCE_ID));
-
-        LOGGER.info("Fetch resource succeeded: " + success);
-
-    }
 
     private JSONObject makePostRequest(String userName, String password, String resourceID, String distributor) {
 
@@ -130,6 +114,24 @@ public class HttpClientDemo {
         JSONObject json = new JSONObject();
         json.put(REPLY_PARAMETER_SUCCESS, false);
         return json;
+    }
+
+
+    public static void main(String[] args) {
+
+        HttpClientDemo demo = new HttpClientDemo();
+
+        String userId = "user";
+        String password = "01234";
+        String resourceId = "01";
+        String distributor = "UPS";
+
+        JSONObject jsonReply = demo.makePostRequest(userId, password, resourceId, distributor);
+        boolean success = (Boolean.parseBoolean((String) jsonReply.get(REPLY_PARAMETER_SUCCESS)))
+                && StringUtils.equals(resourceId, (String) jsonReply.get(REQUEST_PARAMETER_RESOURCE_ID));
+
+        LOGGER.info("Fetch resource succeeded: " + success);
+
     }
 
 }
