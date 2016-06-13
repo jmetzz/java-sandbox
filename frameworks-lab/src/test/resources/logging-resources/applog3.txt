@@ -1,8 +1,0 @@
-DEBUG   2016-05-30 17:20:54,006 [main] com.github.jmetzz.frameworksLab.logging.log4j.Log4jDemoApp  - this is a debug log message
-INFO    2016-05-30 17:20:54,007 [main] com.github.jmetzz.frameworksLab.logging.log4j.Log4jDemoApp  - this is a information log message
-WARN    2016-05-30 17:20:54,007 [main] com.github.jmetzz.frameworksLab.logging.log4j.Log4jDemoApp  - this is a warning log message
-FATAL   2016-05-30 17:20:54,010 [main] com.github.jmetzz.frameworksLab.logging.log4j.Log4jDemoApp  - Hello this is an fatal message
-ERROR   2016-05-30 17:20:54,010 [main] com.github.jmetzz.frameworksLab.logging.log4j.Log4jDemoApp  - Hello this is an error message
-WARN    2016-05-30 17:20:54,011 [main] com.github.jmetzz.frameworksLab.logging.log4j.Log4jDemoApp  - Hello this is an warning message
-INFO    2016-05-30 17:20:54,011 [main] com.github.jmetzz.frameworksLab.logging.log4j.Log4jDemoApp  - Hello this is an info message
-DEBUG   2016-05-30 17:20:54,011 [main] com.github.jmetzz.frameworksLab.logging.log4j.Log4jDemoApp  - Hello this is an debug message
