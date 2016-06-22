@@ -1,6 +1,6 @@
-package com.github.jmetzz.core.proxy;
+package com.github.jmetzz.laboratory.structural.proxy;
 
-import com.github.jmetzz.core.proxy.dummyService.ICalculator;
+import com.github.jmetzz.laboratory.structural.proxy.dummyService.ICalculator;
 
 /**
  * Created by Jean Metz.

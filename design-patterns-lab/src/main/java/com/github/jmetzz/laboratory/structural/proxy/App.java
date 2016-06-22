@@ -1,9 +1,9 @@
-package com.github.jmetzz.core.proxy;
+package com.github.jmetzz.laboratory.structural.proxy;
 
-import com.github.jmetzz.core.proxy.dummyService.CalculatorImpl;
-import com.github.jmetzz.core.proxy.dummyService.ConsolePrinter;
-import com.github.jmetzz.core.proxy.dummyService.ICalculator;
-import com.github.jmetzz.core.proxy.dummyService.IPrinter;
+import com.github.jmetzz.laboratory.structural.proxy.dummyService.CalculatorImpl;
+import com.github.jmetzz.laboratory.structural.proxy.dummyService.ConsolePrinter;
+import com.github.jmetzz.laboratory.structural.proxy.dummyService.ICalculator;
+import com.github.jmetzz.laboratory.structural.proxy.dummyService.IPrinter;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;

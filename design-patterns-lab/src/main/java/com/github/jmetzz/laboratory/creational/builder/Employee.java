@@ -1,4 +1,4 @@
-package com.github.jmetzz.core.builder;
+package com.github.jmetzz.laboratory.creational.builder;
 
 import com.google.common.base.MoreObjects;
 

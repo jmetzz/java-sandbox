@@ -1,4 +1,4 @@
-package com.github.jmetzz.core.builder;
+package com.github.jmetzz.laboratory.creational.builder;
 
 public abstract class AbstractBuilder<T> {
     private T instance;

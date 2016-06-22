@@ -1,4 +1,4 @@
-package com.github.jmetzz.core.proxy.dummyService;
+package com.github.jmetzz.laboratory.structural.proxy.dummyService;
 
 /**
  * Created by Jean Metz.

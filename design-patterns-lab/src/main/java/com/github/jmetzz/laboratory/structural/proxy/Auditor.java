@@ -1,4 +1,4 @@
-package com.github.jmetzz.core.proxy;
+package com.github.jmetzz.laboratory.structural.proxy;
 
 import com.sun.istack.internal.logging.Logger;
 
