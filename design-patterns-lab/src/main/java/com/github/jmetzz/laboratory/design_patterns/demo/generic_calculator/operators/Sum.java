@@ -7,9 +7,17 @@ import java.util.Arrays;
 
 public class Sum extends Operator {
 
+	public static final String OPERATOR_SUM = "Sum";
+	public static final String DEFAULT_SUM_SYMBOL = "+";
+
 	public Sum() {
-		super("Sum", "+", Associativity.LEFT, 0);
+		super(OPERATOR_SUM, DEFAULT_SUM_SYMBOL, Associativity.LEFT, 0);
 	}
+
+	public Sum(String symbol){
+		super(OPERATOR_SUM, symbol, Associativity.LEFT, 0);
+	}
+
 
 	@Override
 	public Double eval(Double... operands) throws ArithmeticException {

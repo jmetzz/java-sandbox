@@ -3,6 +3,7 @@ package com.github.jmetzz.laboratory.design_patterns.demo.generic_calculator.eva
 
 import com.github.jmetzz.laboratory.design_patterns.demo.generic_calculator.operators.Operator;
 import com.github.jmetzz.laboratory.design_patterns.demo.generic_calculator.parser.PostfixParser;
+import com.google.common.base.MoreObjects;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -33,7 +34,7 @@ public class PostfixEvaluator implements IEvaluator {
                     Double d2 = Double.valueOf(stack.pop());
                     Double d1 = Double.valueOf(stack.pop());
                     // Get the result and push onto the stack
-                    stack.push(String.valueOf(getOperator(token).eval(d2)));
+                    stack.push(String.valueOf(getOperator(token).eval(d1, d2)));
                 } catch (NumberFormatException | ArithmeticException e) {
                     throw new IllegalArgumentException();
                 }
@@ -62,5 +63,12 @@ public class PostfixEvaluator implements IEvaluator {
 
     public boolean isOperator(String symbol) {
         return getOperator(symbol) != null;
+    }
+
+    @Override
+    public String toString() {
+        return MoreObjects.toStringHelper(this)
+                .add("operators", operators)
+                .toString();
     }
 }

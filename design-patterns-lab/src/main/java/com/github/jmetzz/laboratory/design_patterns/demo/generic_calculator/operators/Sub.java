@@ -4,8 +4,15 @@ import com.google.common.base.Preconditions;
 
 public class Sub extends Operator {
 
+    public static final String OPERATOR_SUBTRACTION = "Subtraction";
+    public static final String DEFAULT_SUBTRACTION_SYMBOL = "-";
+
     public Sub() {
-        super("Subtraction", "-", Associativity.LEFT, 0);
+        super(OPERATOR_SUBTRACTION, DEFAULT_SUBTRACTION_SYMBOL, Associativity.LEFT, 0);
+    }
+
+    public Sub(String symbol){
+        super(OPERATOR_SUBTRACTION, symbol, Associativity.LEFT, 0);
     }
 
     @Override

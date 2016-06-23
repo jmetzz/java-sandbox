@@ -32,7 +32,7 @@ public class App {
         // --- Testing dynamic auditor ---
         InvocationHandler calculatorAuditor = new AuditingDynamicProxy(auditor, calculator);
 
-        // dynamically generates a class that claims to implement Calculator.
+        // dynamically generates a class that claims to implement AbstractCalculator.
         // called methods are routed to the invocation handler.
         // The handler is associated to a generic object, in this case the
         // calculator object.

@@ -8,12 +8,13 @@ import java.util.Set;
 import java.util.logging.Logger;
 
 
-public class BasicCalculator extends AbstractCalculator {
+public class SuperCalculator extends AbstractCalculator {
 
     // Always use the classname, this way you can refactor
-    private final static Logger LOGGER = Logger.getLogger(BasicCalculator.class.getName());
+	private final static Logger LOGGER = Logger.getLogger(SuperCalculator.class.getName());
 
-    public BasicCalculator(IEvaluator evaluator) {
+
+    public SuperCalculator(IEvaluator evaluator) {
         super(evaluator);
 
         Set<Operator> operators = new HashSet<Operator>();
@@ -22,9 +23,12 @@ public class BasicCalculator extends AbstractCalculator {
         operators.add(new Multiplication());
         operators.add(new Division());
         operators.add(new Mod());
+        operators.add(new Exp());
+        operators.add(new Root());
 
         getEvaluator().registerOperators(operators);
-        LOGGER.info("Basic calculator built");
+
+        LOGGER.info("super calculator built");
     }
 
 }

@@ -8,9 +8,15 @@ public class Multiplication extends Operator {
 
 	private final static Logger LOGGER = Logger.getLogger(Multiplication.class
 			.getName());
+	public static final String OPERATOR_MULTIPLICATION = "Multiplication";
+	public static final String DEFAULT_MULTIPLICATION_SYMBOL = "*";
 
 	public Multiplication() {
-		super("Multiplication", "*", Associativity.LEFT, 5);
+		super(OPERATOR_MULTIPLICATION, DEFAULT_MULTIPLICATION_SYMBOL, Associativity.LEFT, 5);
+	}
+
+	public Multiplication(String symbol){
+		super(OPERATOR_MULTIPLICATION, symbol, Associativity.LEFT, 0);
 	}
 
 	@Override

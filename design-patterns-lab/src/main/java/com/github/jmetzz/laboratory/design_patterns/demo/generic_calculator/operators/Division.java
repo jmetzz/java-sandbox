@@ -6,11 +6,16 @@ import java.util.logging.Logger;
 
 public class Division extends Operator {
 
-	private final static Logger LOGGER = Logger.getLogger(Division.class
-			.getName());
+	private final static Logger LOGGER = Logger.getLogger(Division.class.getName());
+	public static final String OPERATOR_DIVISION = "Division";
+	public static final String DEFAULT_DIVISION_SYMBOL = "/";
 
 	public Division() {
-		super("Division", "/", Associativity.LEFT, 5);
+		super(OPERATOR_DIVISION, DEFAULT_DIVISION_SYMBOL, Associativity.LEFT, 5);
+	}
+
+	public Division(String symbol) {
+		super(OPERATOR_DIVISION, symbol, Associativity.LEFT, 5);
 	}
 
 	@Override
