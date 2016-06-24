@@ -1,3 +1,4 @@
+<!--suppress ALL -->
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
@@ -13,12 +14,14 @@
     <description>Multi Module Parent Project</description>
 
     <modules>
-        <module>legacy-java6-lab</module>
+        <module>algorithms-and-challenges-lab</module>
         <module>concurrency-lab</module>
         <module>design-patterns-lab</module>
-        <module>algorithms-and-challenges-lab</module>
+        <module>frameworks-lab</module>
+        <module>general-java-lab</module>
         <module>generics-lab</module>
         <module>lambdas-and-streams-lab</module>
+        <module>legacy-java6-lab</module>
         <module>tdd-lab</module>
     </modules>
 
