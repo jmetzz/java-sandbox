@@ -1,9 +1,10 @@
 package com.github.jmetzz.laboratory.xml_processing.jaxb;
 
 
+import com.google.common.base.MoreObjects;
+
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
-import java.util.Map;
 
 
 @XmlRootElement(name = "book")
@@ -75,4 +76,16 @@ public class Book {
         this.illustrated = illustrated;
     }
 
+    @Override
+    public String toString() {
+        return MoreObjects.toStringHelper(this)
+                .add("id", id)
+                .add("author", author)
+                .add("title", title)
+                .add("publisher", publisher)
+                .add("isbn", isbn)
+                .add("edition", edition)
+                .add("illustrated", illustrated)
+                .toString();
+    }
 }

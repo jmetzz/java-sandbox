@@ -102,10 +102,12 @@ public class JaxbTest {
     @Test
     public void shouldMarchallAndValidateABookCollection() throws JAXBException, SAXException {
 
+        fail("Still need to define the xsd for this test!");
+
         JAXBContext context = JAXBContext.newInstance(BookCollection.class);
 
         SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-        Schema schema = schemaFactory.newSchema(Paths.get(PACKAGE_RESOURCES + "order.xsd").toFile());
+        Schema schema = schemaFactory.newSchema(Paths.get(PACKAGE_RESOURCES + "book-collection.xsd").toFile());
 
         Marshaller marshaller = context.createMarshaller();
         marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);

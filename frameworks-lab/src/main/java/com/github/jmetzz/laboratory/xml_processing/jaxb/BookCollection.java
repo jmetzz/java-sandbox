@@ -5,7 +5,7 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
-@XmlRootElement(namespace = "com.github.jmetzz.laboratory.xml_processing.jaxb.model")
+@XmlRootElement(namespace = "com.github.jmetzz.laboratory.xml_processing.jaxb")
 public class BookCollection {
 
     @XmlElementWrapper(name = "bookList")
