@@ -17,85 +17,54 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Annotation profile for legacy-java6" enabled="true">
+      <profile default="false" name="Annotation profile for general-java-lab" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-      </profile>
-      <profile default="false" name="Annotation profile for java-multi-threading" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-      </profile>
-      <profile default="false" name="Annotation profile for gs-javaws" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-      </profile>
-      <profile default="false" name="Annotation profile for gs-java8" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-      </profile>
-      <profile default="false" name="Annotation profile for design-patterns" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-      </profile>
-      <profile default="false" name="Annotation profile for algorithms-and-challenges" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="algorithms-and-challenges" />
-      </profile>
-      <profile default="false" name="Annotation profile for concurrency" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="concurrency" />
-      </profile>
-      <profile default="false" name="Annotation profile for algorithms-and-challenges-lab" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-      </profile>
-      <profile default="false" name="Annotation profile for legacy-java6-lab" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
+        <module name="general-java-lab" />
       </profile>
       <profile default="false" name="Annotation profile for concurrency-lab" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="concurrency-lab" />
       </profile>
       <profile default="false" name="Annotation profile for design-patterns-lab" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="design-patterns-lab" />
+      </profile>
+      <profile default="false" name="Annotation profile for algorithms-and-challenges-lab" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="algorithms-and-challenges-lab" />
       </profile>
       <profile default="false" name="Annotation profile for generics-lab" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="generics-lab" />
       </profile>
       <profile default="false" name="Annotation profile for lambdas-and-streams-lab" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="lambdas-and-streams-lab" />
+      </profile>
+      <profile default="false" name="Annotation profile for legacy-java6-lab" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="legacy-java6-lab" />
       </profile>
       <profile default="false" name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -104,33 +73,16 @@
         <processorPath useClasspath="true" />
         <module name="tdd-lab" />
       </profile>
-      <profile default="false" name="Annotation profile for general-java-lab" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="general-java-lab" />
-      </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8">
-      <module name="algorithms-and-challenges" target="1.8" />
+    <bytecodeTargetLevel>
       <module name="algorithms-and-challenges-lab" target="1.8" />
-      <module name="concurrency" target="1.6" />
       <module name="concurrency-lab" target="1.8" />
-      <module name="design-patterns" target="1.8" />
       <module name="design-patterns-lab" target="1.8" />
-      <module name="frameworks-lab" target="1.5" />
+      <module name="frameworks-lab" target="1.8" />
       <module name="general-java-lab" target="1.8" />
       <module name="generics-lab" target="1.8" />
-      <module name="gs-java8" target="1.8" />
-      <module name="gs-javaws" target="1.8" />
-      <module name="java-multi-threading" target="1.6" />
-      <module name="java-sandbox" target="1.5" />
       <module name="lambdas-and-streams-lab" target="1.8" />
-      <module name="legacy-java6" target="1.6" />
       <module name="legacy-java6-lab" target="1.6" />
-      <module name="multi-threading" target="1.5" />
-      <module name="refactoring" target="1.5" />
       <module name="sandbox-java" target="1.5" />
       <module name="tdd-lab" target="1.5" />
     </bytecodeTargetLevel>
