@@ -1,4 +1,4 @@
-package com.github.jmetzz.laboratory.concurrency.standalone.executors;
+package com.github.jmetzz.laboratory.concurrency.standalone.threadPoolExample.future;
 
 
 import java.io.BufferedReader;
@@ -22,8 +22,7 @@ public class ReadWebPage {
             return;
         }
         ExecutorService executor = Executors.newSingleThreadExecutor();
-        Callable<List<String>> callable;
-        callable = new Callable<List<String>>() {
+        Callable<List<String>> callable = new Callable<List<String>>() {
             /* creates a single-thread threadPoolExample and a callable
             that tries to open a connection to this URL, read its
             contents line by line, and save these lines in a list,
@@ -32,7 +31,7 @@ public class ReadWebPage {
             @Override
             public List<String> call()
                     throws IOException {
-                List<String> lines = new ArrayList<String>();
+                List<String> lines = new ArrayList<>();
                 URL url = new URL(args[0]);
                 HttpURLConnection con = (HttpURLConnection) url.openConnection();
                 InputStreamReader isr = new InputStreamReader(con.getInputStream());

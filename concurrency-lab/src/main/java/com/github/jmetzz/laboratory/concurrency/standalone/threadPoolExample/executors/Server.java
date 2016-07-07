@@ -1,4 +1,4 @@
-package com.github.jmetzz.laboratory.concurrency.standalone.executors;
+package com.github.jmetzz.laboratory.concurrency.standalone.threadPoolExample.executors;
 
 import java.io.IOException;
 import java.net.ServerSocket;

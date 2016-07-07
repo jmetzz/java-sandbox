@@ -1,4 +1,4 @@
-package com.github.jmetzz.laboratory.concurrency.standalone.threadPoolExample;
+package com.github.jmetzz.laboratory.concurrency.standalone.threadPoolExample.executors;
 
 import java.util.Map;
 

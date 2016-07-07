@@ -1,4 +1,4 @@
-package com.github.jmetzz.laboratory.concurrency.standalone.threadPoolExample;
+package com.github.jmetzz.laboratory.concurrency.standalone.threadPoolExample.executors;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by Jean Metz.
  */
-public class AppFixedThreadPool {
+public class AppFixedThreadPoolExecutor {
     public final static int THREAD_POOL_SIZE = 5;
 
     public static Map<String, Integer> hashTable = null;
