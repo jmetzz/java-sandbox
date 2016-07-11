@@ -1,8 +1,8 @@
-package com.github.jmetzz.laboratory.concurrency.standalone.poolAcknowledge;
+package com.github.jmetzz.laboratory.concurrency.standalone._99_demo.poolAcknowledge;
 
-import com.github.jmetzz.laboratory.concurrency.standalone.poolAcknowledge.handler.HandlerImpl;
-import com.github.jmetzz.laboratory.concurrency.standalone.poolAcknowledge.handler.IHandler;
-import com.github.jmetzz.laboratory.concurrency.standalone.poolAcknowledge.scheduler.Scheduler;
+import com.github.jmetzz.laboratory.concurrency.standalone._99_demo.poolAcknowledge.handler.HandlerImpl;
+import com.github.jmetzz.laboratory.concurrency.standalone._99_demo.poolAcknowledge.handler.IHandler;
+import com.github.jmetzz.laboratory.concurrency.standalone._99_demo.poolAcknowledge.scheduler.Scheduler;
 
 import java.io.File;
 import java.net.MalformedURLException;

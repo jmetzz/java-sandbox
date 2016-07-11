@@ -120,7 +120,9 @@ public class AppThreadController {
         System.out.println(" --------Not synchronized counter Example---------- ");
         Thread[] threads = new Thread[5];
         for (int i = 0; i < threads.length; i++) {
-            threads[i] = new Thread(new NotSynchronizedCounter(), "thread-" + i);
+            String threadName = "thread-" + i;
+            System.out.println(threadName);
+            threads[i] = new Thread(new NotSynchronizedCounter(), threadName);
             threads[i].start();
         }
         for (int i = 0; i < threads.length; i++) {

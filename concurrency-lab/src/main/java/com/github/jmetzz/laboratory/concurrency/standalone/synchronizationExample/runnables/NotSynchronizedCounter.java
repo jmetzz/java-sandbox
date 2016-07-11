@@ -7,10 +7,11 @@ public class NotSynchronizedCounter implements Runnable {
     private static int counter = 0;
 
     public void run() {
-        while (counter < 10) {
-            System.out.println("[" + Thread.currentThread().getName() + "] before: " + counter);
+        System.out.println(" *** Stating *** " + Thread.currentThread().getName());
+        while (counter < 100) {
+            System.out.println("\t[" + Thread.currentThread().getName() + "] before: " + counter);
             counter++;
-            System.out.println("[" + Thread.currentThread().getName() + "] after: " + counter);
+            System.out.println("\t[" + Thread.currentThread().getName() + "] after: " + counter);
         }
     }
 }

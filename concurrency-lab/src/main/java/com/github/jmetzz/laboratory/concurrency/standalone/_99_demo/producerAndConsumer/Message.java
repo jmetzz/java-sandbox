@@ -1,4 +1,4 @@
-package com.github.jmetzz.laboratory.concurrency.standalone.producerAndConsumer;
+package com.github.jmetzz.laboratory.concurrency.standalone._99_demo.producerAndConsumer;
 
 /**
  * Created by Jean Metz on 18-Nov-15.

@@ -1,4 +1,4 @@
-package com.github.jmetzz.laboratory.concurrency.standalone.poolAcknowledge;
+package com.github.jmetzz.laboratory.concurrency.standalone._99_demo.poolAcknowledge;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;

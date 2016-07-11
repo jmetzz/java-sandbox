@@ -1,4 +1,4 @@
-package com.github.jmetzz.laboratory.concurrency.standalone.producerAndConsumer;
+package com.github.jmetzz.laboratory.concurrency.standalone._99_demo.producerAndConsumer;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;

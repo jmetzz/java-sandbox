@@ -1,6 +1,6 @@
-package com.github.jmetzz.laboratory.concurrency.standalone.poolAcknowledge.handler;
+package com.github.jmetzz.laboratory.concurrency.standalone._99_demo.poolAcknowledge.handler;
 
-import com.github.jmetzz.laboratory.concurrency.standalone.poolAcknowledge.Subscribers;
+import com.github.jmetzz.laboratory.concurrency.standalone._99_demo.poolAcknowledge.Subscribers;
 import org.apache.log4j.Logger;
 
 import java.util.Random;

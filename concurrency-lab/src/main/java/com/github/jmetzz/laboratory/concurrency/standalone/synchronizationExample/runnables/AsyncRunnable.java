@@ -1,15 +1,18 @@
-package com.github.jmetzz.laboratory.concurrency.standalone.toyExample;
+package com.github.jmetzz.laboratory.concurrency.standalone.synchronizationExample.runnables;
+
+import com.github.jmetzz.laboratory.concurrency.standalone._0_fundametals.annotation.Immutable;
 
 import java.util.Random;
 
 /**
  * Created by Jean Metz
  */
-public class AsynchRunnable implements Runnable {
+@Immutable
+public class AsyncRunnable implements Runnable {
 
-    private String name;
+    private final String name;
 
-    public AsynchRunnable(String name) {
+    public AsyncRunnable(String name) {
         this.name = name;
     }
 

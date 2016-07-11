@@ -1,10 +1,13 @@
 package com.github.jmetzz.laboratory.concurrency.standalone.synchronizationExample.runnables;
 
+import com.github.jmetzz.laboratory.concurrency.standalone._0_fundametals.annotation.ThreadSafe;
+
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Created by Jean Metz.
  */
+@ThreadSafe
 public class AtomicCounterRunnable implements Runnable {
 
     public static AtomicInteger COUNTER = new AtomicInteger();

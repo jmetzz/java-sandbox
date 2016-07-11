@@ -1,6 +1,6 @@
-package com.github.jmetzz.laboratory.concurrency.standalone.poolAcknowledge.scheduler;
+package com.github.jmetzz.laboratory.concurrency.standalone._99_demo.poolAcknowledge.scheduler;
 
-import com.github.jmetzz.laboratory.concurrency.standalone.poolAcknowledge.handler.IHandler;
+import com.github.jmetzz.laboratory.concurrency.standalone._99_demo.poolAcknowledge.handler.IHandler;
 
 /**
  * @author Jean Metz.

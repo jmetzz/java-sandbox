@@ -1,8 +1,11 @@
 package com.github.jmetzz.laboratory.concurrency.standalone.synchronizationExample.runnables;
 
+import com.github.jmetzz.laboratory.concurrency.standalone._0_fundametals.annotation.ThreadSafe;
+
 /**
  * Created by Jean Metz.
  */
+@ThreadSafe
 public class SynchronizedCounterRunnable implements Runnable {
     private static int counter = 0;
 
