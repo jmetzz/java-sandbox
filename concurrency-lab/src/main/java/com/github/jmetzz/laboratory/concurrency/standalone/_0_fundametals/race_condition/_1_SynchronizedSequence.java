@@ -5,7 +5,7 @@ import com.github.jmetzz.laboratory.concurrency.standalone._0_fundametals.annota
 @ThreadSafe
 public class _1_SynchronizedSequence {
 
-    private static int value = 0;
+    private int value = 0;
 
     /** Returns a unique value */
     public synchronized int getNext(){

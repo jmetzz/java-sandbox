@@ -3,6 +3,8 @@ package com.github.jmetzz.laboratory.concurrency.standalone._0_fundametals.toyEx
 import com.github.jmetzz.laboratory.concurrency.standalone.synchronizationExample.runnables.AsyncRunnable;
 import org.junit.Test;
 
+import java.util.Collections;
+
 /**
  * Created by Jean Metz on 14-Nov-15.
  */
@@ -14,5 +16,7 @@ public class AsynchRunnableTest {
 
         for (int i = 0; i < 10; i++)
             (new Thread(new AsyncRunnable(Integer.toString(i)))).start();
+
+        Collections.synchronizedList(null);
     }
 }
