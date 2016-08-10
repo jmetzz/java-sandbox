@@ -46,12 +46,23 @@ Sample Output:
  */
 
 
-import com.github.jmetzz.challenges.algorithms.strings.matchString.KMPplus;
-
-public class StringConstruction_4 {
+public class StringComparisonBased implements StringGenerator {
 
 
-    public static int getGenerationMinimalCost(String tape, int costA, int costB) {
+    private static String getLongMatch(String tape, String buffer) {
+        boolean matches = true;
+        int index = 1;
+        while (matches && index < tape.length()) {
+            matches = buffer.contains(tape.substring(0, index));
+            if (matches)
+                index++;
+        }
+        int boundary = (index == tape.length()) ? index : index - 1;
+        return tape.substring(0, boundary);
+    }
+
+    @Override
+    public int costToGenerate(String tape, int costAppendChar, int costAppendString) {
         int cost = 0;
         String buffer = "";
         while (tape.length() > 0) {
@@ -60,29 +71,9 @@ public class StringConstruction_4 {
                 valueMatch = tape.substring(0, 1);
             buffer = buffer + valueMatch;
             tape = tape.substring(valueMatch.length());
-            cost += (valueMatch.length() == 1) ? costA : costB;
+            cost += (valueMatch.length() == 1) ? costAppendChar : costAppendString;
         }
         return cost;
-    }
-
-    private static String getLongMatch(String tape, String buffer) {
-
-        if (buffer.isEmpty()) return "";
-
-        boolean matches = true;
-        int index = 2;
-        while (matches && index < tape.length()) {
-            String pattern = tape.substring(0, index);
-            KMPplus kmp = new KMPplus(pattern);
-            int offset = kmp.search(buffer);
-
-            if (offset != buffer.length())
-                index++;
-            else
-                matches = false;
-        }
-        int boundary = (index == tape.length()) ? index : index - 1;
-        return tape.substring(0, boundary);
     }
 
 }
