@@ -1,4 +1,4 @@
-package com.github.jmetzz.challenges.problems.happinessScore;
+package com.github.jmetzz.challenges.problems.booking_com.happinessScore;
 
 import com.github.jmetzz.challenges.algorithms.probability.Combination;
 import com.github.jmetzz.challenges.primeNumbers.PrimeFactor;
@@ -20,14 +20,14 @@ public class HSCombination extends AbstractHappinessScore {
     public static void main(String[] args) throws IOException {
 
 /*
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String cInput = null;
-        String ssInput = null;
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            String cInput = null;
+            String ssInput = null;
 
-        cInput = br.readLine();
-        ssInput = br.readLine();
+            cInput = br.readLine();
+            ssInput = br.readLine();
 
-        int N = Integer.parseInt(cInput);
+            int N = Integer.parseInt(cInput);
 
         String[] scoresStr = ssInput.split(" ");
         if (N != scoresStr.length)

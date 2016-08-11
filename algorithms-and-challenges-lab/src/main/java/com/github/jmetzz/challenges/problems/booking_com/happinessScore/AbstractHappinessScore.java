@@ -1,4 +1,4 @@
-package com.github.jmetzz.challenges.problems.happinessScore;
+package com.github.jmetzz.challenges.problems.booking_com.happinessScore;
 
 import com.github.jmetzz.challenges.primeNumbers.PrimeFactor;
 

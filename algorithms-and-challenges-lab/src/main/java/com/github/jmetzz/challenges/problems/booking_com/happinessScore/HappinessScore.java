@@ -1,4 +1,4 @@
-package com.github.jmetzz.challenges.problems.happinessScore;
+package com.github.jmetzz.challenges.problems.booking_com.happinessScore;
 
 import java.util.List;
 import java.util.Set;
