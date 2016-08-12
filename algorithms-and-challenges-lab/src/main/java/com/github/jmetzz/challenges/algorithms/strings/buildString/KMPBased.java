@@ -50,13 +50,32 @@ import com.github.jmetzz.challenges.algorithms.strings.matchString.KMPplus;
 
 public class KMPBased implements StringGenerator {
 
+
+
+    @Override
+    public int costToGenerate(String tape, int costAppendChar, int costAppendString) {
+        int cost = 0;
+        String buffer = "";
+        while (tape.length() > 0) {
+            String valueMatch = getLongMatch(tape, buffer);
+            if (valueMatch.isEmpty()) {
+                cost += costAppendChar;
+                valueMatch = tape.substring(0, 1);
+            } else
+                cost += costAppendString;
+            buffer = buffer + valueMatch;
+            tape = tape.substring(valueMatch.length());
+        }
+        return cost;
+    }
+
     private static String getLongMatch(String tape, String buffer) {
 
         if (buffer.isEmpty()) return "";
 
         boolean matches = true;
-        int index = 2;
-        while (matches && index < tape.length()) {
+        int index = 1;
+        while (matches && index <= tape.length()) {
             String pattern = tape.substring(0, index);
             KMPplus kmp = new KMPplus(pattern);
             int offset = kmp.search(buffer);
@@ -66,23 +85,7 @@ public class KMPBased implements StringGenerator {
             else
                 matches = false;
         }
-        int boundary = (index == tape.length()) ? index : index - 1;
-        return tape.substring(0, boundary);
-    }
-
-    @Override
-    public int costToGenerate(String tape, int costAppendChar, int costAppendString) {
-        int cost = 0;
-        String buffer = "";
-        while (tape.length() > 0) {
-            String valueMatch = getLongMatch(tape, buffer);
-            if (valueMatch.isEmpty())
-                valueMatch = tape.substring(0, 1);
-            buffer = buffer + valueMatch;
-            tape = tape.substring(valueMatch.length());
-            cost += (valueMatch.length() == 1) ? costAppendChar : costAppendString;
-        }
-        return cost;
+        return tape.substring(0, index - 1);
     }
 
 }

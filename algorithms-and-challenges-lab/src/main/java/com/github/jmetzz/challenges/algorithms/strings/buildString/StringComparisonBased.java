@@ -2,64 +2,42 @@ package com.github.jmetzz.challenges.algorithms.strings.buildString;
 
 /*
 
-url: https://www.hackerrank.com/challenges/build-a-string
+url: https://www.hackerrank.com/challenges/string-construction
 
-Greg wants to build a string, S of length N. Starting with an empty string, he can perform 2 operations:
+Amanda has a string, s, of m lowercase letters that she wants to copy into a new string, p.
+She can perform the following operations any number of times to construct string p:
 
-1. Add a character to the end of S for A dollars.
-2. Copy any substring of S, and then add it to the end of S for B dollars.
-Calculate minimum amount of money Greg needs to build S.
+1. Append a character to the end of string p at a cost of 1 dollar.
+2. Choose any substring of p and append it to the end of p at no charge.
+
+Given n strings (i.e., s_0, s_1, ..., s_n-1), find and print the minimum cost of copying each s_i to p_i on a new line.
 
 Input Format
-
-The first line contains number of testcases T.
-
-The 2xT  subsequent lines each describe a test case over 2 lines:
-The first contains 3 space-separated integers, N, A , and B, respectively.
-The second contains S (the string Greg wishes to build).
+    The first line contains a single integer, , denoting the number of strings.
+    Each line i of the n subsequent lines contains a single string, s_i .
 
 Constraints
-
-1 <= T <= 3
-1 <= N <= 3x10^4
-1 <= A,B <= 10000
-
-S is composed of lowercase letters only.
+    1 <= n <= 5
+    1 <= m <= 10^5
 
 Output Format
+    For each string s_i (where 0 <= i < n), print the minimum cost of constructing string p_i on a new line.
 
-On a single line for each test case, print the minimum cost (as an integer) to build S.
-
-Sample input:
+Sample Input
 
 2
-9 4 5
-aabaacaba
-9 8 9
-bacbacacb
+abcd
+abab
 
-Sample Output:
 
-26
-42
+Sample Output
 
- */
+4
+2
+*/
 
 
 public class StringComparisonBased implements StringGenerator {
-
-
-    private static String getLongMatch(String tape, String buffer) {
-        boolean matches = true;
-        int index = 1;
-        while (matches && index < tape.length()) {
-            matches = buffer.contains(tape.substring(0, index));
-            if (matches)
-                index++;
-        }
-        int boundary = (index == tape.length()) ? index : index - 1;
-        return tape.substring(0, boundary);
-    }
 
     @Override
     public int costToGenerate(String tape, int costAppendChar, int costAppendString) {
@@ -67,13 +45,26 @@ public class StringComparisonBased implements StringGenerator {
         String buffer = "";
         while (tape.length() > 0) {
             String valueMatch = getLongMatch(tape, buffer);
-            if (valueMatch.isEmpty())
+            if (valueMatch.isEmpty()) {
+                cost += costAppendChar;
                 valueMatch = tape.substring(0, 1);
+            } else
+                cost += costAppendString;
+
             buffer = buffer + valueMatch;
             tape = tape.substring(valueMatch.length());
-            cost += (valueMatch.length() == 1) ? costAppendChar : costAppendString;
         }
         return cost;
     }
 
+    private String getLongMatch(String tape, String buffer) {
+        boolean matches = true;
+        int exclusiveEnd = 1;
+        while (matches && exclusiveEnd <= tape.length()) {
+            matches = buffer.contains(tape.substring(0, exclusiveEnd));
+            if (matches)
+                exclusiveEnd++;
+        }
+        return tape.substring(0, exclusiveEnd - 1);
+    }
 }
