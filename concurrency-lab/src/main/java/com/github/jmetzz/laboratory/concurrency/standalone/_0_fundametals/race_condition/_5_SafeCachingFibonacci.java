@@ -1,7 +1,7 @@
 package com.github.jmetzz.laboratory.concurrency.standalone._0_fundametals.race_condition;
 
 
-import com.github.jmetzz.laboratory.concurrency.standalone._0_fundametals.annotation.ThreadSafe;
+import com.github.jmetzz.laboratory.concurrency.standalone.annotation.ThreadSafe;
 
 /**
  * This simple caching strategy is atomic. However, it is only for illustration purposes.

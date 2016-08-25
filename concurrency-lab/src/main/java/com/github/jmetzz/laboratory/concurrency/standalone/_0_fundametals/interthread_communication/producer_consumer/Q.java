@@ -1,4 +1,4 @@
-package com.github.jmetzz.laboratory.concurrency.standalone._0_fundametals.interthread_communication;
+package com.github.jmetzz.laboratory.concurrency.standalone._0_fundametals.interthread_communication.producer_consumer;
 
 
 public class Q {

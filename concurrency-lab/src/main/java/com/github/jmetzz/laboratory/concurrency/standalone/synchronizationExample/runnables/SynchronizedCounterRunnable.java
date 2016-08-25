@@ -1,6 +1,6 @@
 package com.github.jmetzz.laboratory.concurrency.standalone.synchronizationExample.runnables;
 
-import com.github.jmetzz.laboratory.concurrency.standalone._0_fundametals.annotation.ThreadSafe;
+import com.github.jmetzz.laboratory.concurrency.standalone.annotation.ThreadSafe;
 
 /**
  * Created by Jean Metz.

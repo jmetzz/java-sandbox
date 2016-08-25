@@ -1,6 +1,6 @@
 package com.github.jmetzz.laboratory.concurrency.standalone._0_fundametals.race_condition;
 
-import com.github.jmetzz.laboratory.concurrency.standalone._0_fundametals.annotation.NotThreadSafe;
+import com.github.jmetzz.laboratory.concurrency.standalone.annotation.NotThreadSafe;
 
 
 /**

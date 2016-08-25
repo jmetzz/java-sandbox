@@ -1,6 +1,6 @@
 package com.github.jmetzz.laboratory.concurrency.standalone.synchronizationExample.runnables;
 
-import com.github.jmetzz.laboratory.concurrency.standalone._0_fundametals.annotation.Immutable;
+import com.github.jmetzz.laboratory.concurrency.standalone.annotation.Immutable;
 
 import java.util.Random;
 

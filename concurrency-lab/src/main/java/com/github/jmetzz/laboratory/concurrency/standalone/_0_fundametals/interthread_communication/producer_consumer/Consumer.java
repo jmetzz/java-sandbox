@@ -1,12 +1,12 @@
-package com.github.jmetzz.laboratory.concurrency.standalone._0_fundametals.interthread_communication;
+package com.github.jmetzz.laboratory.concurrency.standalone._0_fundametals.interthread_communication.producer_consumer;
 
 
-public class Producer implements  Runnable{
+public class Consumer implements Runnable{
     private Q q;
 
-    public Producer(Q q){
+    public Consumer(Q q){
         this.q = q;
-        new Thread(this, "Producer").start();
+        new Thread(this, "Consumer").start();
         // OBS:
         // 1. This is a very bad example!
         // 2. never start a Thread from the constructor,
@@ -14,11 +14,11 @@ public class Producer implements  Runnable{
         // partial initialized objects.
     }
 
+
     @Override
     public void run() {
-        int i = 0;
         while (true){
-            q.put(i++);
+            q.get();
         }
     }
 }

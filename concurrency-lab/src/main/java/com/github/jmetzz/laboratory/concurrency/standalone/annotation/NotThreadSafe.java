@@ -1,4 +1,4 @@
-package com.github.jmetzz.laboratory.concurrency.standalone._0_fundametals.annotation;
+package com.github.jmetzz.laboratory.concurrency.standalone.annotation;
 
 
 import java.lang.annotation.ElementType;
