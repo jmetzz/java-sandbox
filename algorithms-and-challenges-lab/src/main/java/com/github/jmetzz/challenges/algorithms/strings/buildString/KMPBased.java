@@ -46,7 +46,7 @@ Sample Output:
  */
 
 
-import com.github.jmetzz.challenges.algorithms.strings.matchString.KMPplus;
+import com.github.jmetzz.challenges.algorithms.strings.matchString.KMPMatcherplus;
 
 public class KMPBased implements StringGenerator {
 
@@ -77,7 +77,7 @@ public class KMPBased implements StringGenerator {
         int index = 1;
         while (matches && index <= tape.length()) {
             String pattern = tape.substring(0, index);
-            KMPplus kmp = new KMPplus(pattern);
+            KMPMatcherplus kmp = new KMPMatcherplus(pattern);
             int offset = kmp.search(buffer);
 
             if (offset != buffer.length())

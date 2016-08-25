@@ -3,12 +3,12 @@ package com.github.jmetzz.challenges.algorithms.strings.matchString;
 /**
  * Created by Jean Metz.
  */
-public class KMPplus {
+public class KMPMatcherplus {
     private String pattern;
     private int[] next;
 
     // create Knuth-Morris-Pratt NFA from pattern
-    public KMPplus(String pattern) {
+    public KMPMatcherplus(String pattern) {
         this.pattern = pattern;
         int m = pattern.length();
         next = new int[m];
@@ -35,7 +35,7 @@ public class KMPplus {
         int n = text.length();
 
         // substring search
-        KMPplus kmp = new KMPplus(pattern);
+        KMPMatcherplus kmp = new KMPMatcherplus(pattern);
         int offset = kmp.search(text);
 
         // print results

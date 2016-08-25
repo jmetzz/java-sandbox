@@ -1,39 +1,39 @@
 /******************************************************************************
- * Compilation:  javac KMP.java
- * Execution:    java KMP pattern text
+ * Compilation:  javac KMPMatcher.java
+ * Execution:    java KMPMatcher pattern text
  * Dependencies: StdOut.java
  * <p>
  * Reads in two strings, the pattern and the input text, and
  * searches for the pattern in the input text using the
- * KMP algorithm.
+ * KMPMatcher algorithm.
  * <p>
- * % java KMP abracadabra abacadabrabracabracadabrabrabracad
+ * % java KMPMatcher abracadabra abacadabrabracabracadabrabrabracad
  * text:    abacadabrabracabracadabrabrabracad
  * pattern:               abracadabra
  * <p>
- * % java KMP rab abacadabrabracabracadabrabrabracad
+ * % java KMPMatcher rab abacadabrabracabracadabrabrabracad
  * text:    abacadabrabracabracadabrabrabracad
  * pattern:         rab
  * <p>
- * % java KMP bcara abacadabrabracabracadabrabrabracad
+ * % java KMPMatcher bcara abacadabrabracabracadabrabrabracad
  * text:    abacadabrabracabracadabrabrabracad
  * pattern:                                   bcara
  * <p>
- * % java KMP rabrabracad abacadabrabracabracadabrabrabracad
+ * % java KMPMatcher rabrabracad abacadabrabracabracadabrabrabracad
  * text:    abacadabrabracabracadabrabrabracad
  * pattern:                        rabrabracad
  * <p>
- * % java KMP abacad abacadabrabracabracadabrabrabracad
+ * % java KMPMatcher abacad abacadabrabracabracadabrabrabracad
  * text:    abacadabrabracabracadabrabrabracad
  * pattern: abacad
  ******************************************************************************/
 
 package com.github.jmetzz.challenges.algorithms.strings.matchString;
 
-import edu.princeton.cs.algs4.StdOut;
+
 
 /**
- *  The <tt>KMP</tt> class finds the first occurrence of a pattern string
+ *  The <tt>KMPMatcher</tt> class finds the first occurrence of a pattern string
  *  in a text string.
  *  <p>
  *  This implementation uses a version of the Knuth-Morris-Pratt substring search
@@ -46,7 +46,7 @@ import edu.princeton.cs.algs4.StdOut;
  *  see <a href="http://algs4.cs.princeton.edu/53substring">Section 5.3</a> of
  *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  */
-public class KMP {
+public class KMPMatcher {
     private final int R;       // the radix
     private int[][] dfa;       // the KMP automoton
 
@@ -58,7 +58,7 @@ public class KMP {
      *
      * @param pat the pattern string
      */
-    public KMP(String pat) {
+    public KMPMatcher(String pat) {
         this.R = 256;
         this.pat = pat;
 
@@ -80,7 +80,7 @@ public class KMP {
      * @param pattern the pattern string
      * @param R the alphabet size
      */
-    public KMP(char[] pattern, int R) {
+    public KMPMatcher(char[] pattern, int R) {
         this.R = R;
         this.pattern = new char[pattern.length];
         for (int j = 0; j < pattern.length; j++)
@@ -111,24 +111,24 @@ public class KMP {
         char[] pattern = pat.toCharArray();
         char[] text = txt.toCharArray();
 
-        KMP kmp1 = new KMP(pat);
+        KMPMatcher kmp1 = new KMPMatcher(pat);
         int offset1 = kmp1.search(txt);
 
-        KMP kmp2 = new KMP(pattern, 256);
+        KMPMatcher kmp2 = new KMPMatcher(pattern, 256);
         int offset2 = kmp2.search(text);
 
         // print results
-        StdOut.println("text:    " + txt);
+        System.out.println("text:    " + txt);
 
-        StdOut.print("pattern: ");
+        System.out.print("pattern: ");
         for (int i = 0; i < offset1; i++)
-            StdOut.print(" ");
-        StdOut.println(pat);
+            System.out.print(" ");
+        System.out.println(pat);
 
-        StdOut.print("pattern: ");
+        System.out.print("pattern: ");
         for (int i = 0; i < offset2; i++)
-            StdOut.print(" ");
-        StdOut.println(pat);
+            System.out.print(" ");
+        System.out.println(pat);
     }
 
     /**
