@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:bookCollection xmlns:ns2="com.github.jmetzz.laboratory.xml_processing.jaxb">
+    <bookList>
+        <book>
+            <id>0</id>
+            <author>Neil Strauss</author>
+            <title>The Game</title>
+            <edition>1</edition>
+            <publisher>HarperCollins</publisher>
+            <isbn>978-0060554736</isbn>
+            <illustrated>false</illustrated>
+        </book>
+        <book>
+            <id>0</id>
+            <author>Bernard Cornwell</author>
+            <title>The last kingdom</title>
+            <edition>1</edition>
+            <publisher>HarperCollins</publisher>
+            <isbn>978-0060530510</isbn>
+            <illustrated>false</illustrated>
+        </book>
+    </bookList>
+    <name>Fiction</name>
+</ns2:bookCollection>
