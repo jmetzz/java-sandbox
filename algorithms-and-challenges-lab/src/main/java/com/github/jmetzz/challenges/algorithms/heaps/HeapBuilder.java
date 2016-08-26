@@ -29,6 +29,32 @@ public class HeapBuilder {
             swap(array, index, smallest);
     }
 
+    public static void swim(Integer[] array, int i){
+        while (i > 0 && array[father(i)] < array[i]){
+            swap(array, father(i), i);
+            i = father(i);
+        }
+    }
+
+    public static void sink(Integer[] array, int i){
+        while(2*i <= array.length){
+            int j = left(i);
+            if (j < array.length && array[j] < array[right(i)]) j++;
+            if (array[i] > array[j]) break;
+            swap(array, i, j);
+            i = j;
+        }
+    }
+
+    public static void increaseKey(Integer[] array, int i, int value){
+
+    }
+
+
+    public static void decreaseKey(Integer[] array, int i, int value){
+
+    }
+
 
     private static void swap(Integer[] array, int a, int b) {
         int temp = array[a];
@@ -42,5 +68,9 @@ public class HeapBuilder {
 
     private static int right(int i) {
         return i * 2 + 2;
+    }
+
+    public static int father(int i){
+        return i / 2;
     }
 }
