@@ -1,4 +1,4 @@
-package com.github.jmetzz.laboratory.xml_processing.jaxb;
+package com.github.jmetzz.laboratory.xml_processing.pojos;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;

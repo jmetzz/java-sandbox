@@ -1,5 +1,8 @@
 package com.github.jmetzz.laboratory.xml_processing.jaxb;
 
+import com.github.jmetzz.laboratory.xml_processing.pojos.Book;
+import com.github.jmetzz.laboratory.xml_processing.pojos.BookCollection;
+import com.github.jmetzz.laboratory.xml_processing.pojos.CreditCard;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.xml.sax.SAXException;

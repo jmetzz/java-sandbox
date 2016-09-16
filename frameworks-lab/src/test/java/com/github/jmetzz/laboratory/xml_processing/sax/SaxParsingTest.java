@@ -1,5 +1,6 @@
 package com.github.jmetzz.laboratory.xml_processing.sax;
 
+import com.github.jmetzz.laboratory.xml_processing.pojos.OrderLine;
 import org.junit.Test;
 import org.xml.sax.SAXException;
 

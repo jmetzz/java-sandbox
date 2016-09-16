@@ -1,4 +1,4 @@
-package com.github.jmetzz.laboratory.xml_processing.sax;
+package com.github.jmetzz.laboratory.xml_processing.pojos;
 
 
 import com.google.common.base.MoreObjects;
