@@ -43,6 +43,52 @@
                     <target>${version.java}</target>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.jvnet.jaxb2.maven2</groupId>
+                <artifactId>maven-jaxb2-plugin</artifactId>
+                <version>0.12.3</version>
+                <executions>
+                    <execution>
+                        <id>add-source-for-demoapp</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <schemaDirectory>src/main/resources</schemaDirectory>
+                            <schemaIncludes>
+                                <include>purchaseorder.xsd</include>
+                            </schemaIncludes>
+                           <!--
+                            <bindingDirectory>src/main/resources</bindingDirectory>
+                            <bindingIncludes>
+                                <include>purchaseorder.xjb</include>
+                            </bindingIncludes>
+                            -->
+                            <generateDirectory>target/generated-sources/xjc/purchaseorder</generateDirectory>
+                            <generatePackage>com.github.jmetzz.laboratory.xml_processing.pojos</generatePackage>
+                            <!--  Other configuration options-->
+
+                            <!-- Additionally, inside Configuration section, a sub plugin can be declared to get additional support.
+                            For example, if we want our generated code to include toString, equals and hashcode methods keep the jaxb2-basics
+                            plugin as follows
+                            -->
+                            <plugins>
+                                <plugin>
+                                    <groupId>org.jvnet.jaxb2_commons</groupId>
+                                    <artifactId>jaxb2-basics</artifactId>
+                                    <version>0.9.4</version>
+                                </plugin>
+                            </plugins>
+                            <args>
+                                <arg>-Xequals</arg>
+                                <arg>-XhashCode</arg>
+                                <arg>-XtoString</arg>
+                            </args>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
@@ -94,6 +140,14 @@
             <version>5.0.0-ALPHA</version>
             <scope>test</scope>
         </dependency>
+
+
+        <dependency>
+            <groupId>com.thoughtworks.xstream</groupId>
+            <artifactId>xstream</artifactId>
+            <version>1.4.9</version>
+        </dependency>
+
 
 
     </dependencies>
