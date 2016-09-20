@@ -2,10 +2,11 @@ package com.github.jmetzz.laboratory.logging.utils_logging._2_handlers_demo;
 
 import java.io.IOException;
 import java.util.logging.*;
+import static com.github.jmetzz.laboratory.Constants.LOGGING_TEST_RESOURCES;
 
 public class MemoryHandlerDemo {
-    public static final String BASE_PROJECT_URL = "./frameworks-lab/";
-    public static final String PACKAGE_RESOURCES = BASE_PROJECT_URL + "src/test/resources/logging-resources/";
+//    public static final String BASE_PROJECT_URL = "./frameworks-lab/";
+//    public static final String PACKAGE_RESOURCES = BASE_PROJECT_URL + "src/test/resources/logging-resources/";
 
     private ConsoleHandler consoleHandler = null;
 
@@ -25,7 +26,7 @@ public class MemoryHandlerDemo {
     public MemoryHandlerDemo(int size, Level pushLevel) throws IOException {
         /* since IO is expensive, let's use a memory handler to keep some messages
         in memory before flushing */
-        fileHandler = new FileHandler(PACKAGE_RESOURCES + "MultipleHandlersDemo.xml");
+        fileHandler = new FileHandler(LOGGING_TEST_RESOURCES + "MultipleHandlersDemo.xml");
         mHandler = new MemoryHandler(fileHandler, size, pushLevel);
         logger.addHandler(mHandler);
 

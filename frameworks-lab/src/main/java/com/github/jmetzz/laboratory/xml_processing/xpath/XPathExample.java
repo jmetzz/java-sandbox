@@ -18,11 +18,10 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-
+import static com.github.jmetzz.laboratory.Constants.XML_TEST_RESOURCES;
 public class XPathExample {
 
-    private static final String PACKAGE_RESOURCES = "frameworks-lab/src/test/resources/xml-resources/";
-    private static final String EMPLOYEES_XML = PACKAGE_RESOURCES + "employees.xml";
+    private static final String EMPLOYEES_XML = XML_TEST_RESOURCES + "employees.xml";
 
 
     public static void main(String[] args) {

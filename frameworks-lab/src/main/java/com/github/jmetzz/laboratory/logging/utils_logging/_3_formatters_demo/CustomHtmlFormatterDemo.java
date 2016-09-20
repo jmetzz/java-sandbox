@@ -3,14 +3,10 @@ package com.github.jmetzz.laboratory.logging.utils_logging._3_formatters_demo;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
+import static com.github.jmetzz.laboratory.Constants.LOGGING_TEST_RESOURCES;
 public class CustomHtmlFormatterDemo {
     // Always use the classname, this way you can refactor
     private final static Logger LOGGER = Logger.getLogger(CustomHtmlFormatterDemo.class.getName());
-
-    public static final String BASE_PROJECT_URL = "./frameworks-lab/";
-    public static final String PACKAGE_RESOURCES = BASE_PROJECT_URL + "src/test/resources/logging-resources/";
-
 
     public void writeLog() {
         // Set the LogLevel to Severe, only severe Messages will be written
@@ -32,7 +28,7 @@ public class CustomHtmlFormatterDemo {
     public static void main(String[] args) {
         CustomHtmlFormatterDemo logger = new CustomHtmlFormatterDemo();
         try {
-            MyLogger.setup(PACKAGE_RESOURCES + "LOG-CustomHtmlFormatterDemo");
+            MyLogger.setup(LOGGING_TEST_RESOURCES + "LOG-CustomHtmlFormatterDemo");
         } catch (IOException e) {
             e.printStackTrace();
             throw new RuntimeException("Problems with creating the log files");

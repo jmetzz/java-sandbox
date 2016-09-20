@@ -3,7 +3,7 @@ package com.github.jmetzz.laboratory.json_processing;
 import com.github.jmetzz.laboratory.json_processing.wrapper.GSonWrapper;
 import com.github.jmetzz.laboratory.json_processing.wrapper.JacksonWrapper;
 import com.github.jmetzz.laboratory.json_processing.wrapper.JsonParserWrapper;
-
+import static com.github.jmetzz.laboratory.Constants.*;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.Map;
@@ -13,13 +13,10 @@ import java.util.logging.Logger;
 
 public class GSonXJacksonDemo {
 
-    public static final String BASE_PROJECT_URL = "./frameworks-lab/";
-    public static final String PACKAGE_RESOURCES = BASE_PROJECT_URL + "src/test/resources/json-resources/";
+    private static final String SMALL_SIZE_DATA_JSON_PATH = JSON_TEST_RESOURCES + "small_size_data.json";
+    private static final String MEDIUM_SIZE_DATA_JSON_PATH = JSON_TEST_RESOURCES + "medium_size_data.json";
+    private static final String BIG_SIZE_DATA_JSON_PATH = JSON_TEST_RESOURCES + "big_size_data.json";
 
-
-    private static final String SMALL_SIZE_DATA_JSON_PATH = PACKAGE_RESOURCES + "small_size_data.json";
-    private static final String MEDIUM_SIZE_DATA_JSON_PATH = PACKAGE_RESOURCES + "medium_size_data.json";
-    private static final String BIG_SIZE_DATA_JSON_PATH = PACKAGE_RESOURCES + "big_size_data.json";
     private static final Logger LOGGER = Logger.getLogger(GSonXJacksonDemo.class.getName());
 
     public static void main(String[] args) throws IOException {

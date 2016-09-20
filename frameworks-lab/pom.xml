@@ -56,12 +56,12 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <schemaDirectory>src/main/resources</schemaDirectory>
+                            <schemaDirectory>src/test/resources/xml-resources</schemaDirectory>
                             <schemaIncludes>
                                 <include>purchaseorder.xsd</include>
                             </schemaIncludes>
                            <!--
-                            <bindingDirectory>src/main/resources</bindingDirectory>
+                            <bindingDirectory>src/test/resources/xml-resources</bindingDirectory>
                             <bindingIncludes>
                                 <include>purchaseorder.xjb</include>
                             </bindingIncludes>

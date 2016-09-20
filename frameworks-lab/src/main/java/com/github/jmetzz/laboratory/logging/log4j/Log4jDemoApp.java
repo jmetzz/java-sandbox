@@ -7,11 +7,11 @@ import org.apache.log4j.xml.DOMConfigurator;
 import java.io.IOException;
 import java.util.Enumeration;
 
+import static com.github.jmetzz.laboratory.Constants.BASE_PROJECT_URL;
+import static com.github.jmetzz.laboratory.Constants.LOGGING_TEST_RESOURCES;
+
+
 public class Log4jDemoApp {
-
-    public static final String BASE_PROJECT_URL = "./frameworks-lab/";
-    public static final String PACKAGE_RESOURCES = BASE_PROJECT_URL + "src/test/resources/logging-resources/";
-
 
     // don't throw exception in your main method, handle it!!
     public static void main(String[] args) throws IOException {
@@ -20,24 +20,24 @@ public class Log4jDemoApp {
         System.out.println("\n\n");
 
         System.out.println("--------------------- programmaticConfiguration ---------------------");
-        programmaticConfiguration(PACKAGE_RESOURCES + "applog3.txt");
+        programmaticConfiguration(BASE_PROJECT_URL + "applog3.txt");
         System.out.println("\n\n");
 
 
         System.out.println("--------------------- defaultHTMLAppenderConfiguration ---------------------");
-        defaultHTMLAppenderConfiguration(PACKAGE_RESOURCES + "Log4JHTMLLayout.html");
+        defaultHTMLAppenderConfiguration(BASE_PROJECT_URL + "Log4JHTMLLayout.html");
         System.out.println("\n\n");
 
-        System.out.println("--------------------- propertiesFileConfiguration(example1.properties) ---------------------");
-        propertiesFileConfiguration(PACKAGE_RESOURCES + "ex1.properties");
+        System.out.println("--------------------- propertiesFileConfiguration(ex1.properties) ---------------------");
+        propertiesFileConfiguration(LOGGING_TEST_RESOURCES + "ex1.properties");
         System.out.println("\n\n");
 
-        System.out.println("--------------------- propertiesFileConfiguration(example2.properties) ---------------------");
-        propertiesFileConfiguration(PACKAGE_RESOURCES + "ex2.properties");
+        System.out.println("--------------------- propertiesFileConfiguration(ex2.properties) ---------------------");
+        propertiesFileConfiguration(LOGGING_TEST_RESOURCES + "ex2.properties");
         System.out.println("\n\n");
 
         System.out.println("--------------------- xmlFileConfiguration ---------------------");
-        xmlFileConfiguration(PACKAGE_RESOURCES + "log4j-xml-configuration.xml");
+        xmlFileConfiguration(LOGGING_TEST_RESOURCES + "log4j-xml-configuration.xml");
         System.out.println("\n\n");
 
         System.out.println("--------------------- testLoggerLevelInheritance ---------------------");
@@ -45,7 +45,7 @@ public class Log4jDemoApp {
         System.out.println("\n\n");
 
         System.out.println("--------------------- testLoggerLevelInheritance(filename) ---------------------");
-        testLoggerLevelInheritance(PACKAGE_RESOURCES + "exHierarchy.xml");
+        testLoggerLevelInheritance(LOGGING_TEST_RESOURCES + "exHierarchy.xml");
 
 
     }
@@ -102,7 +102,7 @@ public class Log4jDemoApp {
 
     public static void propertiesFileConfiguration(String filename) {
         /*
-		 * If the file log4j.properties in found (path)
+         * If the file log4j.properties in found (path)
 		 * it is not necessary to call configure method.
 		 * For this example, log4j.properties contains
 		 * the same contend that is in filename (e.g. example.properties).

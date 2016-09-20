@@ -2,11 +2,11 @@ package com.github.jmetzz.laboratory.logging.utils_logging._3_formatters_demo;
 
 import java.io.IOException;
 import java.util.logging.*;
-
+import static com.github.jmetzz.laboratory.Constants.LOGGING_TEST_RESOURCES;
 public class XMLFormatterDemo {
 
-	public static final String BASE_PROJECT_URL = "./frameworks-lab/";
-	public static final String PACKAGE_RESOURCES = BASE_PROJECT_URL + "src/test/resources/logging-resources/";
+//	public static final String BASE_PROJECT_URL = "./frameworks-lab/";
+//	public static final String PACKAGE_RESOURCES = BASE_PROJECT_URL + "src/test/resources/logging-resources/";
 
 	private ConsoleHandler consoleHandler;
 	private Formatter formatter;
@@ -28,7 +28,7 @@ public class XMLFormatterDemo {
 
 		try {
 			// creating a StreamHandler object to file output the xml message
-			handler = new FileHandler(PACKAGE_RESOURCES + "newxml.xml");
+			handler = new FileHandler(LOGGING_TEST_RESOURCES + "newxml.xml");
 			handler.setFormatter(formatter);
 
 			// publishing the log message to the file and flushing the buffer

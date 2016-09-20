@@ -5,15 +5,11 @@ import java.io.PrintWriter;
 import java.util.logging.Handler;
 import java.util.logging.LogRecord;
 import java.util.logging.SimpleFormatter;
-
+import static com.github.jmetzz.laboratory.Constants.LOGGING_TEST_RESOURCES;
 /**
  * MyCustomHandler outputs contents to a specified file
  */
 public class MyCustomHandler extends Handler {
-
-    public static final String BASE_PROJECT_URL = "./frameworks-lab/";
-    public static final String PACKAGE_RESOURCES = BASE_PROJECT_URL + "src/test/resources/logging-resources/";
-
 
     FileOutputStream fileOutputStream;
     PrintWriter printWriter;
@@ -23,7 +19,7 @@ public class MyCustomHandler extends Handler {
 
         // check input parameter
         if (filename == null || filename == "")
-            filename = PACKAGE_RESOURCES + "MyCustomHandler_logfile.txt";
+            filename = LOGGING_TEST_RESOURCES + "MyCustomHandler_logfile.txt";
 
         try {
             // initialize the file

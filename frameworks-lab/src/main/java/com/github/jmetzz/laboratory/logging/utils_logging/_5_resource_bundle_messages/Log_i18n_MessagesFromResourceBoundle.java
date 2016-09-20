@@ -7,7 +7,6 @@ import java.util.logging.ConsoleHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
 /*
  * Resource bundle sample
  * 
@@ -34,8 +33,6 @@ import java.util.logging.Logger;
  */
 public class Log_i18n_MessagesFromResourceBoundle {
 
-    public static final String BASE_PROJECT_URL = "./frameworks-lab/";
-    public static final String PACKAGE_RESOURCES = BASE_PROJECT_URL + "src/test/resources/logging-resources/";
 
     public static void main(String[] args) throws IOException {
 

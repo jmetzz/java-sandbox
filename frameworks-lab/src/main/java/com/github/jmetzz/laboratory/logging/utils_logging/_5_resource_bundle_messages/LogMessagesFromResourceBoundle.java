@@ -9,7 +9,7 @@ import java.util.logging.ConsoleHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
+import static com.github.jmetzz.laboratory.Constants.RESOURCES;
 /*
  * Resource bundle sample
  * 
@@ -36,16 +36,13 @@ import java.util.logging.Logger;
  */
 public class LogMessagesFromResourceBoundle {
 
-    public static final String BASE_PROJECT_URL = "./frameworks-lab/";
-    public static final String PACKAGE_RESOURCES = BASE_PROJECT_URL + "src/main/resources/";
-
     public static void main(String[] args) throws IOException {
 
         Logger logger = Logger.getLogger(LogMessagesFromResourceBoundle.class.getName());
         logger.setLevel(Level.INFO);
         logger.addHandler(new ConsoleHandler());
 
-        String bundle = PACKAGE_RESOURCES + "LoggerDefaultMessages.properties";
+        String bundle = RESOURCES + "LoggerDefaultMessages.properties";
         if (!Paths.get(bundle).toFile().exists()) {
             logger.log(Level.SEVERE, "Resource bundle not found in path " + bundle);
             System.exit(0);
