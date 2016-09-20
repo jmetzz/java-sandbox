@@ -21,9 +21,6 @@ public class CompoundPojoExample {
 
             String inputFile = XML_TEST_RESOURCES + "purchaseorder.xml";
 
-            PurchaseOrderType purchaseOrderType = new PurchaseOrderType();
-
-
             JAXBElement purchaseOrderElement = (JAXBElement) unmarshaller.unmarshal(new FileInputStream(inputFile));
             PurchaseOrderType pOrder = (PurchaseOrderType) purchaseOrderElement.getValue();
 
