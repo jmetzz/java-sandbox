@@ -18,7 +18,7 @@ import java.time.LocalDateTime;
  * with callback methods. What this means is that developers can access and process XML data
  * without having to know XML or XML processing.
  */
-public class SimplePojoExample {
+public class _1_SimplePojoExample {
 
 
     public static void main(String[] args) throws JAXBException {
