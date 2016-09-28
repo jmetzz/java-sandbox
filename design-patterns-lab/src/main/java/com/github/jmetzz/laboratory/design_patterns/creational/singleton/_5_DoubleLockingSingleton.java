@@ -10,10 +10,13 @@ package com.github.jmetzz.laboratory.design_patterns.creational.singleton;
 public class _5_DoubleLockingSingleton {
 
 
-    private static _5_DoubleLockingSingleton instance;
+    /**
+     * It's easy to forget the volatile statement and difficult to understand why it is necessary.
+     * For details : http://www.cs.umd.edu/~pugh/java/memoryModel/DoubleCheckedLocking.html
+     */
+    private static volatile _5_DoubleLockingSingleton instance;
 
-    private _5_DoubleLockingSingleton() {
-    }
+    private _5_DoubleLockingSingleton() {}
 
     public static synchronized _5_DoubleLockingSingleton getInstance() {
 
