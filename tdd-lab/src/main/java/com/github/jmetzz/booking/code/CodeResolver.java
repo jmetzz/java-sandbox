@@ -1,7 +1,7 @@
 package com.github.jmetzz.booking.code;
 
 
-import com.github.jmetzz.genericMethod.pojo.Code;
+import com.github.jmetzz.laboratory.generics.genericMethod.pojo.Code;
 
 import java.util.SortedSet;
 

@@ -1,7 +1,7 @@
 package com.github.jmetzz.booking.code;
 
 
-import com.github.jmetzz.genericMethod.pojo.BaseCode;
+import com.github.jmetzz.laboratory.generics.genericMethod.pojo.BaseCode;
 
 public class CodeKey extends BaseCode {
 
