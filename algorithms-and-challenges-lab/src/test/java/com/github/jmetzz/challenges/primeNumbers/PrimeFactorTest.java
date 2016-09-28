@@ -32,7 +32,7 @@ public class PrimeFactorTest {
 
     @Test
     public void bwCheckerTest() {
-        performTest(new PrimeFactorBWImpl());
+        performTest(new PrimeFactorBitWiseImpl());
     }
 
     @Test
