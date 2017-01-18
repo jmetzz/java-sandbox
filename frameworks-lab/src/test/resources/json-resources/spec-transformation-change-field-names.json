@@ -1,0 +1,10 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "ID": "transformedID",
+      "firstName":"firstName",
+      "lastName":"familyName"
+    }
+  }
+]

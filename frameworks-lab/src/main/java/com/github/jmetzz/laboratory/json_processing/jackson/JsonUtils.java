@@ -1,13 +1,14 @@
 package com.github.jmetzz.laboratory.json_processing.jackson;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.NullNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Paths;
+import java.util.Map;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
@@ -15,7 +16,9 @@ import java.util.concurrent.Future;
  * Created by jean on 3/01/2017.
  */
 public class JsonUtils {
-    static final NullNode NULL_NODE = JsonNodeFactory.instance.nullNode();
+    public static final NullNode NULL_NODE = JsonNodeFactory.instance.nullNode();
+    private static final String DELIMITER = "\"";
+    private static final String SEPARATOR = ":";
 
     private static ObjectMapper mapper = new ObjectMapper();
 
@@ -27,12 +30,23 @@ public class JsonUtils {
         return node == null || node.has(propertyName) == false ? defaultValue : node.get(propertyName);
     }
 
-    public static String toJsonString(JsonNode node) {
-        try {
-            return mapper.writeValueAsString(node);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+    public static String toJsonString(JsonNode node) throws JsonProcessingException {
+        return mapper.writeValueAsString(node);
+    }
+
+    public static JsonNode toJson(String jsonStr) throws IOException {
+        return mapper.readValue(jsonStr, JsonNode.class);
+    }
+
+
+    public static JsonNode toJson(String key, String value) throws IOException {
+        StringBuilder sb = new StringBuilder()
+                .append("{")
+                .append(DELIMITER).append(key).append(DELIMITER)
+                .append(SEPARATOR)
+                .append(DELIMITER).append(value).append(DELIMITER)
+                .append("}");
+        return mapper.readValue(sb.toString(), JsonNode.class);
     }
 
     public static JsonNode getFutureValue(Future<JsonNode> futureNode) {
@@ -48,8 +62,25 @@ public class JsonUtils {
         return getNodeProperty(getFutureValue(node), propertyName, defaultValue);
     }
 
-    public static JsonNode fromFile(String filename) throws IOException {
-        return mapper.readTree(new File(filename));
+    public static JsonNode getNodeProperty(Future<JsonNode> node, String propertyName) {
+        return getNodeProperty(getFutureValue(node), propertyName);
     }
 
+
+    public static boolean isNotNull(JsonNode jsonNode) {
+        return !jsonNode.isNull();
+    }
+
+
+    public static void addNode(JsonNode targetNode, JsonNode nodeToAdd, String fieldName) {
+        if (targetNode instanceof ObjectNode) {
+            ((ObjectNode) targetNode).set(fieldName, nodeToAdd);
+        }
+    }
+
+    public static void setNodeProperty(ObjectNode node, String key, JsonNode property) {
+        if (isNotNull(property)) {
+            node.set(key, property);
+        }
+    }
 }
