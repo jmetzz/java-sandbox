@@ -8,7 +8,6 @@ import com.fasterxml.jackson.databind.node.NullNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 
 import java.io.IOException;
-import java.util.Map;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
@@ -30,23 +29,36 @@ public class JsonUtils {
         return node == null || node.has(propertyName) == false ? defaultValue : node.get(propertyName);
     }
 
-    public static String toJsonString(JsonNode node) throws JsonProcessingException {
-        return mapper.writeValueAsString(node);
+    public static String toJsonString(JsonNode node) throws  RuntimeException {
+        try {
+            return mapper.writeValueAsString(node);
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
     }
 
-    public static JsonNode toJson(String jsonStr) throws IOException {
-        return mapper.readValue(jsonStr, JsonNode.class);
+    public static JsonNode toJson(String jsonStr) throws  RuntimeException {
+        try {
+            return mapper.readValue(jsonStr, JsonNode.class);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 
-    public static JsonNode toJson(String key, String value) throws IOException {
+    public static JsonNode toJson(String key, String value) throws  RuntimeException {
         StringBuilder sb = new StringBuilder()
                 .append("{")
                 .append(DELIMITER).append(key).append(DELIMITER)
                 .append(SEPARATOR)
                 .append(DELIMITER).append(value).append(DELIMITER)
                 .append("}");
-        return mapper.readValue(sb.toString(), JsonNode.class);
+
+        try {
+            return mapper.readValue(sb.toString(), JsonNode.class);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public static JsonNode getFutureValue(Future<JsonNode> futureNode) {

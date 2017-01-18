@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.List;
 
 public class JsonTransformer {
-    public static JsonNode transform(JsonNode json, String jsonSpec) throws IOException {
+    public static JsonNode transform(JsonNode json, String jsonSpec) throws IOException, JsonProcessingException{
         List<Object> chainSpecJSON = JsonUtils.classpathToList(jsonSpec);
         Chainr chainr = Chainr.fromSpec(chainSpecJSON);
         Object transform = chainr.transform(JsonUtils.jsonToObject(json.toString()));
