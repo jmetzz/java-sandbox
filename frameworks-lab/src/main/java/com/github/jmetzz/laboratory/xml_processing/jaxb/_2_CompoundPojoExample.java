@@ -1,6 +1,7 @@
 package com.github.jmetzz.laboratory.xml_processing.jaxb;
 
 
+
 import com.github.jmetzz.laboratory.xml_processing.pojos.ObjectFactory;
 import com.github.jmetzz.laboratory.xml_processing.pojos.PurchaseOrderType;
 import com.github.jmetzz.laboratory.xml_processing.pojos.USAddress;
@@ -34,7 +35,7 @@ public class _2_CompoundPojoExample {
             marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 
             /*
-             * Be awere that you should pass the JAXBElement wrapper object here as the first parameter,
+             * Be aware that you should pass the JAXBElement wrapper object here as the first parameter,
              * not the casted (generated class) object, in this case PurchaseOrderType object pOrder.
              *
              *      marshaller.marshal(pOrder, System.out);    ====> javax.xml.bind.MarshalException
