@@ -1,0 +1,65 @@
+{
+  "ID": "SALESLINE12156",
+  "orderID": "SALES123",
+  "businessCreationDate": "2016-01-02T10:22:50Z",
+  "creatorPerson": {
+    "ID": "100",
+    "firstName": "Frits",
+    "familyName": "Spits"
+  },
+  "customerProductReference": "CUSTPROD",
+  "directDelivery": false,
+  "dropboxReplenishmentRequestRequested": false,
+  "fixedPrice": false,
+  "grossMarginTwo": {
+    "value": 22,
+    "timestampOfCalculation": "2016-02-17T17:22:35Z"
+  },
+  "packaging": {
+    "ID": "74",
+    "description": "plastic bag 25 kg"
+  },
+  "printedProductDescription": "This is my changed product description",
+  "product": {
+    "ID": "123",
+    "brandName": "DOW",
+    "color": {
+      "ID": "123",
+      "description": "BLACK"
+    },
+    "grade": "LDPE",
+    "producerColorCode": "DARK"
+  },
+  "quantity": {
+    "quantity": 750,
+    "unitCode": "kg",
+    "isEditable":true
+  },
+  "rejectionReason": {
+    "ID": "10",
+    "description": "Wrong data",
+    "comment": "This order was rejected because the wrong sales person was entered"
+  },
+  "sample": false,
+  "stateChecks": [
+    {
+      "check": "AVAILABILITY",
+      "value": "NOT_ASSIGNED"
+    },
+    {
+      "check": "COMMERCIAL_VIABILITY",
+      "value": "APPROVED"
+    },
+    {
+      "check": "CREDIT",
+      "value": "NOT_ASSIGNED"
+    }
+  ],
+  "status": "Accepted",
+  "systemCreationDate": "2016-01-07T10:22:51Z",
+  "unitPrice": {
+    "amount": 1.25,
+    "unitCode": "kg"
+  },
+  "version": 1
+}

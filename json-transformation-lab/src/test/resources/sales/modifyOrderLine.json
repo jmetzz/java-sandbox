@@ -1,0 +1,33 @@
+{
+  "customerProductReference": "CUSTPROD",
+  "fixedPrice": false,
+  "grossMarginTwo": {
+    "value": 22,
+    "timestampOfCalculation": "2016-02-17T17:22:35Z"
+  },
+  "packaging": {
+    "packagingID": "74",
+    "description": "plastic bag 25 kg"
+  },
+  "printedProductDescription": "This is my changed product description",
+  "product": {
+    "productID": "123",
+    "brandName": "DOW",
+    "color": {
+      "colorID": "123",
+      "description": "BLACK"
+    },
+    "grade": "LDPE",
+    "producerColorCode": "DARK"
+  },
+  "quantity": {
+    "quantity": 750,
+    "unitCode": "kg"
+  },
+  "sample": false,
+  "unitPrice": {
+    "amount": 1.25,
+    "unitCode": "kg"
+  },
+  "version": 1
+}

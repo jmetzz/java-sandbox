@@ -1,0 +1,16 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "ID": "billingAddressID",
+      "addressLine":"addressLine",
+      "addressName":"addressName",
+      "cityName":"cityName",
+      "country":{
+        "identificationCode":"country.identificationCode"
+      },
+      "countrySubEntityCode":"countrySubEntityCode",
+      "postalZone":"postalZone"
+    }
+  }
+]

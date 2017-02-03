@@ -1,0 +1,55 @@
+{
+  "creatorPerson": {
+    "ID": "100",
+    "firstName": "Frits",
+    "familyName": "Spits"
+  },
+  "businessCreationDate": "2015-07-26T12:25:57Z",
+  "transportType": {
+    "ID": "124",
+    "description": "ROAD"
+  },
+  "currencyIsoCode": "EUR",
+  "fuelSurcharge": true,
+  "billingAddress": {
+    "ID": "17831",
+    "addressLine": "K Vypichu 1149",
+    "addressName": "PORT BANGKOK",
+    "cityName": "BANGKOK",
+    "country": {
+      "identificationCode": "THA"
+    },
+    "countrySubEntityCode": "BK",
+    "postalZone": "THBKK"
+  },
+  "customer": {
+    "ID": "12481",
+    "callSign": "Loomans"
+  },
+  "deliveryAddress": {
+    "ID": "583583",
+    "addressLine": "Postbus 1350",
+    "addressName": "BOEKELO DECOR",
+    "cityName": "ENSCHEDE",
+    "country": {
+      "identificationCode": "NLD"
+    },
+    "countrySubEntityCode": "OVL",
+    "postalZone": "7500 BJ"
+  },
+  "deliveryInstructions": "These are my delivery instructions",
+
+"paymentCondition": {
+    "ID": "10",
+    "description": "30 days"
+  },
+  "paymentDiscount": {
+    "ID": "21",
+    "description": "5%"
+  },
+  "seller": {
+    "ID": "201591",
+    "firstName": "Peter",
+    "familyName": "Seli"
+  }
+}

@@ -119,6 +119,8 @@
         <maven-jaxb2-plugin.version>0.12.3</maven-jaxb2-plugin.version>
         <build-helper-maven-plugin.version>1.9</build-helper-maven-plugin.version>
         <jaxb2-basics.version>0.6.5</jaxb2-basics.version>
+        <javax.json-p.version>1.0.4</javax.json-p.version>
+        <jexl.version>3.0</jexl.version>
     </properties>
 
     <dependencies>
@@ -130,9 +132,13 @@
 
         <!-- Logging -->
         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
-            <!--<version>1.2.14</version>-->
         </dependency>
 
 
@@ -154,6 +160,18 @@
             <artifactId>gson</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>javax.json</groupId>
+            <artifactId>javax.json-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish</groupId>
+            <artifactId>javax.json</artifactId>
+            <version>${javax.json-p.version}</version>
+        </dependency>
+
+        <!-- Utilities -->
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
@@ -185,6 +203,21 @@
         <dependency>
             <groupId>org.skyscreamer</groupId>
             <artifactId>jsonassert</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-jexl3</artifactId>
+            <version>${jexl.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
         </dependency>
 
 

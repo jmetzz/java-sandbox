@@ -1,0 +1,53 @@
+{
+  "creatorPerson": {
+    "ID": "100",
+    "firstName": "John",
+    "familyName": "Doe"
+  },
+  "businessCreationDate": "2015-07-26T12:25:57Z",
+  "transportType": {
+    "ID": "124",
+    "description": "ROAD"
+  },
+  "currencyIsoCode": "EUR",
+  "fuelSurcharge": true,
+  "billingAddress": {
+    "ID": "17831",
+    "addressLine": "Fireball street 689",
+    "addressName": "Port Hoegaarden",
+    "cityName": "Antwerp",
+    "country": {
+      "identificationCode": "BE"
+    },
+    "postalZone": "2100"
+  },
+  "customer": {
+    "ID": "12481",
+    "callSign": "Logan"
+  },
+  "deliveryAddress": {
+    "ID": "583583",
+    "addressLine": "Postbox 1350",
+    "addressName": "RAIBOW DECOR",
+    "cityName": "Breda",
+    "country": {
+      "identificationCode": "NL"
+    },
+    "postalZone": "7500 ZW"
+  },
+  "deliveryInstructions": "There are my delivery instructions",
+
+  "paymentCondition": {
+    "ID": "10",
+    "description": "30 days"
+  },
+  "paymentDiscount": {
+    "ID": "21",
+    "description": "5%"
+  },
+  "seller": {
+    "ID": "201591",
+    "firstName": "Rui",
+    "familyName": "Costa"
+  }
+}

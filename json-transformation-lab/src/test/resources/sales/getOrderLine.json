@@ -1,0 +1,56 @@
+{
+  "orderID": "Order123",
+  "orderLineID": "OrderLine12156",
+  "businessCreationDate": "2016-01-02T10:22:50Z",
+  "creatorPerson": {
+    "creatorPersonID": "100",
+    "firstName": "John",
+    "familyName": "Doe"
+  },
+  "fixedPrice": false,
+  "packaging": {
+    "packagingID": "74",
+    "description": "plastic bag 25 kg"
+  },
+  "printedProductDescription": "This is my product description",
+  "product": {
+    "productID": "123",
+    "brandName": "3M",
+    "color": {
+      "colorID": "123",
+      "description": "BLACK"
+    },
+    "producerColorCode": "DARK"
+  },
+  "quantity": {
+    "quantity": 750,
+    "unitCode": "kg"
+  },
+  "rejectionReason": {
+    "rejectionReasonID": "10",
+    "description": "Wrong data",
+    "comment": "This order was rejected because the wrong sales person was entered"
+  },
+  "sample": false,
+  "stateChecks": [
+    {
+      "check": "AVAILABILITY",
+      "value": "NOT_ASSIGNED"
+    },
+    {
+      "check": "COMMERCIAL_VIABILITY",
+      "value": "APPROVED"
+    },
+    {
+      "check": "CREDIT",
+      "value": "NOT_ASSIGNED"
+    }
+  ],
+  "status": "Accepted",
+  "systemCreationDate": "2016-01-07T10:22:51Z",
+  "unitPrice": {
+    "amount": 1.25,
+    "unitCode": "kg"
+  },
+  "version": 1
+}

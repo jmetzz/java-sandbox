@@ -1,0 +1,143 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Sales order line detail",
+  "type": "object",
+  "properties": {
+    "businessCreationDate": {
+      "type": "string",
+      "format": "date-time",
+      "required": true
+    },
+    "creatorPerson": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "ID": {
+          "type": "string",
+          "maxLength": 36,
+          "required": true
+        },
+        "firstName": {
+          "type": "string",
+          "maxLength": 40,
+          "required": true
+        },
+        "familyName": {
+          "type": "string",
+          "maxLength": 80,
+          "required": true
+        }
+      }
+    },
+    "customerProductReference": {
+      "type": "string",
+      "maxLength": 60,
+      "required": false
+    },
+    "dropboxReplenishmentRequestRequested": {
+      "type": "boolean",
+      "required": false
+    },
+    "fixedPrice": {
+      "type": "boolean",
+      "required": false
+    },
+    "packaging": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "ID": {
+          "type": "string",
+          "maxLength": 36,
+          "required": true
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 50,
+          "required": true
+        }
+      }
+    },
+    "printedProductDescription": {
+      "type": "string",
+      "maxLength": 255,
+      "required": false
+    },
+    "product": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "ID": {
+          "type": "string",
+          "maxLength": 36,
+          "required": true
+        },
+        "brandName": {
+          "type": "string",
+          "maxLength": 40,
+          "required": true
+        },
+        "color": {
+          "type": "object",
+          "required": false,
+          "properties": {
+            "ID": {
+              "type": "string",
+              "maxLength": 36,
+              "required": true
+            },
+            "description": {
+              "type": "string",
+              "maxLength": 50,
+              "required": true
+            }
+          }
+        },
+        "grade": {
+          "type": "string",
+          "maxLength": 50,
+          "required": true
+        },
+        "producerColorCode": {
+          "type": "string",
+          "maxLength": 30,
+          "required": false
+        }
+      }
+    },
+    "quantity": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "quantity": {
+          "type": "number",
+          "required": true
+        },
+        "unitCode": {
+          "type": "string",
+          "maxLength": 10,
+          "required": true
+        }
+      }
+    },
+    "sample": {
+      "type": "boolean",
+      "required": false
+    },
+    "unitPrice": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "amount": {
+          "type": "number",
+          "required": true
+        },
+        "unitCode": {
+          "type": "string",
+          "maxLength": 10,
+          "required": true
+        }
+      }
+    }
+  }
+}

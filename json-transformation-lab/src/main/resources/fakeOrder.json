@@ -1,0 +1,14 @@
+{
+  "id" : 1,
+  "creatorPerson" : "",
+  "fuelSurcharge" : "",
+  "transportType" : "",
+
+  "billingAddress" : "",
+  "customer" : "",
+  "deliveryAddress" : "",
+  "deliveryInstructions" : "",
+  "paymentConditions" : "",
+  "paymentDiscount" : "",
+  "seller" : ""
+}

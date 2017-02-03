@@ -1,0 +1,33 @@
+{
+  "businessCreationDate": "2016-01-02T12:22:50Z",
+  "creatorPerson": {
+    "creatorPersonID": "100",
+    "firstName": "John",
+    "familyName": "Doe"
+  },
+  "customerProductReference": "CUSTPROD",
+  "fixedPrice": false,
+  "packaging": {
+    "packagingID": "74",
+    "description": "plastic bag 25 kg"
+  },
+  "product": {
+    "productID": "123",
+    "brandName": "3M",
+    "color": {
+      "colorID": "123",
+      "description": "BLACK"
+    },
+    "producerColorCode": "DARK"
+  },
+  "printedProductDescription": "This is my product description",
+  "quantity": {
+    "quantity": 750,
+    "unitCode": "kg"
+  },
+  "sample": false,
+  "unitPrice": {
+    "amount": 1.25,
+    "unitCode": "kg"
+  }
+}

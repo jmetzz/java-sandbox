@@ -1,0 +1,308 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "Sales order details",
+  "type": "object",
+  "required": true,
+  "properties": {
+    "automaticProformaInvoiceCommunication":{
+      "type":"boolean",
+      "required":false
+    },
+    "billingAddress": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "ID": {
+          "type": "string",
+          "maxLength": 36,
+          "required": true
+        },
+        "addressLine": {
+          "type": "string",
+          "maxLength": 40,
+          "required": true
+        },
+        "addressName": {
+          "type": "string",
+          "maxLength": 255,
+          "required": true
+        },
+        "cityName": {
+          "type": "string",
+          "maxLength": 40,
+          "required": true
+        },
+        "country": {
+          "type": "object",
+          "required": true,
+          "properties": {
+            "identificationCode": {
+              "type": "string",
+              "minLength": 2,
+              "maxLength": 2,
+              "required": true
+            }
+          }
+        },
+        "countrySubEntityCode": {
+          "type": "string",
+          "maxLength": 10,
+          "required": false
+        },
+        "postalZone": {
+          "type": "string",
+          "maxLength": 20,
+          "required": true
+        }
+      }
+    },
+    "billingContact": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "ID": {
+          "type": "string",
+          "maxLength": 36,
+          "required": true
+        },
+        "firstName": {
+          "type": "string",
+          "maxLength": 40,
+          "required": true
+        },
+        "familyName": {
+          "type": "string",
+          "maxLength": 80,
+          "required": true
+        }
+      }
+    },
+    "callOff": {
+      "type": "boolean",
+      "required": false
+    },
+    "confirmedDeliveryDate": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "from": {
+          "type": "string",
+          "format": "date",
+          "required": true
+        },
+        "till": {
+          "type": "string",
+          "format": "date",
+          "required": false
+        }
+      }
+    },
+    "customer": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "ID": {
+          "type": "string",
+          "maxLength": 36,
+          "required": true
+        },
+        "callSign": {
+          "type": "string",
+          "maxLength": 60,
+          "required": true
+        }
+      }
+    },
+    "customerOrderReference": {
+      "type": "string",
+      "maxLength": 40,
+      "required": false
+    },
+    "deliveryInstructions": {
+      "type": "string",
+      "maxLength": 2000,
+      "required": false
+    },
+    "deliveryTerm": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "ID": {
+          "type": "string",
+          "maxLength": 36,
+          "required": true
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 50,
+          "required": true
+        }
+      }
+    },
+    "destinationAddress": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "ID": {
+          "type": "string",
+          "maxLength": 36,
+          "required": true
+        },
+        "addressLine": {
+          "type": "string",
+          "maxLength": 40,
+          "required": true
+        },
+        "addressName": {
+          "type": "string",
+          "maxLength": 255,
+          "required": true
+        },
+        "cityName": {
+          "type": "string",
+          "maxLength": 40,
+          "required": true
+        },
+        "country": {
+          "type": "object",
+          "required": true,
+          "properties": {
+            "identificationCode": {
+              "type": "string",
+              "maxLength": 2,
+              "minLength": 2,
+              "required": true
+            }
+          }
+        },
+        "countrySubEntityCode": {
+          "type": "string",
+          "maxLength": 10,
+          "required": false
+        },
+        "postalZone": {
+          "type": "string",
+          "maxLength": 20,
+          "required": true
+        }
+      }
+    },
+    "fuelSurcharge": {
+      "type": "boolean",
+      "required": true
+    },
+    "internalComment": {
+      "type": "string",
+      "maxLength": 2000,
+      "required": false
+    },
+    "loadDate": {
+      "type": "string",
+      "format": "date",
+      "required": false
+    },
+    "loadingInstructions": {
+      "type": "string",
+      "maxLength": 2000,
+      "required": false
+    },
+    "entity": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "ID": {
+          "type": "string",
+          "maxLength": 36,
+          "required": true
+        },
+        "callSign": {
+          "type": "string",
+          "maxLength": 60,
+          "required": true
+        }
+      }
+    },
+    "reactiveSalesPerson": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "ID": {
+          "type": "string",
+          "maxLength": 36,
+          "required": true
+        },
+        "firstName": {
+          "type": "string",
+          "maxLength": 40,
+          "required": true
+        },
+        "familyName": {
+          "type": "string",
+          "maxLength": 80,
+          "required": true
+        }
+      }
+    },
+    "requestedDeliveryDate": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "from": {
+          "type": "string",
+          "format": "date",
+          "required": true
+        },
+        "till": {
+          "type": "string",
+          "format": "date",
+          "required": false
+        }
+      }
+    },
+    "requireManualAcceptance": {
+      "type": "boolean",
+      "required": true
+    },
+    "salesPerson": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "ID": {
+          "type": "string",
+          "maxLength": 36,
+          "required": true
+        },
+        "firstName": {
+          "type": "string",
+          "maxLength": 40,
+          "required": true
+        },
+        "familyName": {
+          "type": "string",
+          "maxLength": 80,
+          "required": true
+        }
+      }
+    },
+    "transportType": {
+      "type": "object",
+      "required": false,
+      "properties": {
+        "ID": {
+          "type": "string",
+          "maxLength": 36,
+          "required": true
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 50,
+          "required": true
+        }
+      }
+    },
+    "version": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

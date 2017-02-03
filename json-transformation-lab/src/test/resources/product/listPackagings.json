@@ -1,0 +1,47 @@
+[
+  {
+    "ID": "1",
+    "description": "pallet100x100cm",
+    "packagingType": "Fixed net weight"
+  },
+  {
+    "ID": "2",
+    "description": "pallet100x110cm",
+    "packagingType": "Fixed net weight"
+  },
+  {
+    "ID": "3",
+    "description": "pallet100x120cm",
+    "packagingType": "Variable net weight"
+  },
+  {
+    "ID": "4",
+    "description": "pallet102x122cm",
+    "packagingType": "Wrapping"
+  },
+  {
+    "ID": "5",
+    "description": "pallet105x120cm",
+    "packagingType": "Wrapping"
+  },
+  {
+    "ID": "6",
+    "description": "pallet107x107cm",
+    "packagingType": "Wrapping"
+  },
+  {
+    "ID": "7",
+    "description": "pallet110x110cm",
+    "packagingType": "Fixed net weight"
+  },
+  {
+    "ID": "8",
+    "description": "pallet110x120cm",
+    "packagingType": "Variable net weight"
+  },
+  {
+    "ID": "9",
+    "description": "pallet110x122cm",
+    "packagingType": "Variable net weight"
+  }
+]

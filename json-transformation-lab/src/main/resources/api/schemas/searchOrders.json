@@ -1,0 +1,201 @@
+{
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "title": "List of sales orders",
+  "type": "array",
+  "items": {
+    "title": "Sales order details",
+    "type": "object",
+    "properties": {
+      "ID": {
+        "type": "string",
+        "maxLength":36,
+        "required": true
+      },
+      "businessCreationDate": {
+        "type": "string",
+        "format": "date-time",
+        "required": true
+      },
+      "callOff": {
+        "type": "boolean",
+        "required": false
+      },
+      "confirmedDeliveryDate": {
+        "type": "object",
+        "required": false,
+        "properties": {
+          "from": {
+            "type": "string",
+            "format": "date",
+            "required": true
+          },
+          "till": {
+            "type": "string",
+            "format": "date",
+            "required": false
+          }
+        }
+      },
+      "creatorPerson": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "ID": {
+            "type": "string",
+            "maxLength":36,
+            "required": true
+          },
+          "firstName": {
+            "type": "string",
+            "maxLength": 40,
+            "required": true
+          },
+          "familyName": {
+            "type": "string",
+            "maxLength": 80,
+            "required": true
+          }
+        }
+      },
+      "customer": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "ID": {
+            "type": "string",
+            "maxLength": 36,
+            "required": true
+          },
+          "callSign": {
+            "type": "string",
+            "maxLength": 60,
+            "required": true
+          }
+        }
+      },
+      "customerOrderReference": {
+        "type": "string",
+        "maxLength": 40,
+        "required": false
+      },
+      "fuelSurcharge": {
+        "type": "boolean",
+        "required": true
+      },
+      "internalComment": {
+        "type": "string",
+        "maxLength": 2000,
+        "required": false
+      },
+      "entity": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "ID": {
+            "type": "string",
+            "maxLength": 36,
+            "required": true
+          },
+          "callSign": {
+            "type": "string",
+            "maxLength": 60,
+            "required": true
+          }
+        }
+      },
+      "reactiveSalesPerson": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "ID": {
+            "type": "string",
+            "maxLength": 36,
+            "required": true
+          },
+          "firstName": {
+            "type": "string",
+            "maxLength": 40,
+            "required": true
+          },
+          "familyName": {
+            "type": "string",
+            "maxLength": 80,
+            "required": true
+          }
+        }
+      },
+      "rejectionReason": {
+        "type": "object",
+        "required": false,
+        "properties": {
+          "ID": {
+            "type": "string",
+            "maxLength": 36,
+            "required": true
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 40,
+            "required": true
+          },
+          "comment": {
+            "type": "string",
+            "maxLength": 80,
+            "required": false
+          }
+        }
+      },
+      "requestedDeliveryDate": {
+        "type": "object",
+        "required": false,
+        "properties": {
+          "from": {
+            "type": "string",
+            "format": "date",
+            "required": true
+          },
+          "till": {
+            "type": "string",
+            "format": "date",
+            "required": false
+          }
+        }
+      },
+      "salesPerson": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "ID": {
+            "type": "string",
+            "maxLength": 36,
+            "required": true
+          },
+          "firstName": {
+            "type": "string",
+            "maxLength": 40,
+            "required": true
+          },
+          "familyName": {
+            "type": "string",
+            "maxLength": 80,
+            "required": true
+          }
+        }
+      },
+      "status": {
+        "type": "string",
+        "maxLength": 50,
+        "required": true
+      },
+      "systemCreationDate": {
+        "type": "string",
+        "format": "date-time",
+        "required": true
+      },
+      "version": {
+        "type": "integer",
+        "required": true
+      }
+    }
+  }
+}
