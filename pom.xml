@@ -85,6 +85,7 @@
         <json-api.version>1.0</json-api.version>
         <commons-io.version>2.5</commons-io.version>
         <spring.version>4.3.4.RELEASE</spring.version>
+        <junit-params.version>1.0.6</junit-params.version>
     </properties>
 
 
@@ -277,6 +278,14 @@
                 <version>${spring.version}</version>
                 <scope>test</scope>
             </dependency>
+
+            <dependency>
+                <groupId>pl.pragmatists</groupId>
+                <artifactId>JUnitParams</artifactId>
+                <version>${junit-params.version}</version>
+                <scope>test</scope>
+            </dependency>
+
 
             <!-- Logs -->
             <dependency>
