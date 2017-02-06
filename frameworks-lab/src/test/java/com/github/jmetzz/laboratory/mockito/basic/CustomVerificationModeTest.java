@@ -1,4 +1,4 @@
-package com.github.jmetzz.laboratory.mockito;
+package com.github.jmetzz.laboratory.mockito.basic;
 
 import com.github.jmetzz.laboratory.mockito.business.Printer;
 import org.junit.Test;
@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import static com.github.jmetzz.laboratory.mockito.First.first;
+import static com.github.jmetzz.laboratory.mockito.basic.verification_mode.First.first;
 import static org.mockito.Mockito.verify;
 
 /**

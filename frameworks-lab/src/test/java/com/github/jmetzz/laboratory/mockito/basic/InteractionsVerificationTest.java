@@ -1,4 +1,4 @@
-package com.github.jmetzz.laboratory.mockito;
+package com.github.jmetzz.laboratory.mockito.basic;
 
 import com.github.jmetzz.laboratory.mockito.business.Printer;
 import org.junit.Test;
