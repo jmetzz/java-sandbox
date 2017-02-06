@@ -2,6 +2,7 @@ package com.github.jmetzz.laboratory.mockito.spring_integration_tests;
 
 import com.github.jmetzz.laboratory.mockito.business.Printer;
 import com.github.jmetzz.laboratory.mockito.business.PrinterDiagnostics;
+import com.github.jmetzz.laboratory.mockito.spring_integration_tests.support.AbstractParameterizedBaseTest;
 import junitparams.Parameters;
 import org.junit.Before;
 import org.junit.Test;

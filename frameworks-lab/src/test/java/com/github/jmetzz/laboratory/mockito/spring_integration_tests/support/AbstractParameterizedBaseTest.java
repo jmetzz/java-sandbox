@@ -1,6 +1,5 @@
-package com.github.jmetzz.laboratory.mockito.spring_integration_tests;
+package com.github.jmetzz.laboratory.mockito.spring_integration_tests.support;
 
-import com.github.jmetzz.laboratory.mockito.spring_integration_tests.support.ApplicationTest;
 import junitparams.JUnitParamsRunner;
 import org.junit.ClassRule;
 import org.junit.Rule;

@@ -2,12 +2,10 @@ package com.github.jmetzz.laboratory.mockito.spring_integration_tests;
 
 import com.github.jmetzz.laboratory.mockito.business.Printer;
 import com.github.jmetzz.laboratory.mockito.spring_integration_tests.config.TestApplicationContext;
-import org.junit.Before;
 import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;

@@ -1,7 +1,7 @@
 package com.github.jmetzz.laboratory.mockito.spring_integration_tests;
 
-import com.github.jmetzz.laboratory.mockito.spring_integration_tests.config.TestApplicationContext;
 import com.github.jmetzz.laboratory.mockito.business.Printer;
+import com.github.jmetzz.laboratory.mockito.spring_integration_tests.config.TestApplicationContext;
 import org.junit.Before;
 import org.junit.ClassRule;
 import org.junit.Rule;
@@ -55,6 +55,11 @@ public class ResetInteractionsVerificationTest {
 
     @Before
     public void setup(){
+        // we don't need this when not running into spring context.
+        // However, if spring manages the mock/bean, then it seems that
+        // mockito does not remove invocation from the mock after it's being
+        // verified. This behaviour causes problems when you do need to verify
+        // the exact number of call to a method on a mocked reference.
         Mockito.reset(printer);
     }
 
