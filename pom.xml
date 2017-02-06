@@ -84,12 +84,25 @@
         <commons-lang3.version>3.4</commons-lang3.version>
         <json-api.version>1.0</json-api.version>
         <commons-io.version>2.5</commons-io.version>
+        <spring.version>4.3.4.RELEASE</spring.version>
     </properties>
 
 
     <dependencyManagement>
 
         <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>log4j</groupId>
                 <artifactId>log4j</artifactId>
@@ -258,6 +271,12 @@
                 <scope>test</scope>
             </dependency>
 
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring.version}</version>
+                <scope>test</scope>
+            </dependency>
 
             <!-- Logs -->
             <dependency>

@@ -1,6 +1,6 @@
 package com.github.jmetzz.laboratory.mockito;
 
-import com.github.jmetzz.laboratory.mockito.model.Printer;
+import com.github.jmetzz.laboratory.mockito.business.Printer;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;

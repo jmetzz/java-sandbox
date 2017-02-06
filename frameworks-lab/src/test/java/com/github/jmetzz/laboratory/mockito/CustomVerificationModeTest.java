@@ -1,15 +1,13 @@
 package com.github.jmetzz.laboratory.mockito;
 
-import com.github.jmetzz.laboratory.mockito.model.Printer;
+import com.github.jmetzz.laboratory.mockito.business.Printer;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import static com.github.jmetzz.laboratory.mockito.First.first;
-import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
-import static org.mockito.internal.verification.VerificationModeFactory.*;
 
 /**
  * Created by jean on 6/02/2017.

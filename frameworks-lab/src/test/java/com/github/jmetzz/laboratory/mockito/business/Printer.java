@@ -1,4 +1,4 @@
-package com.github.jmetzz.laboratory.mockito.model;
+package com.github.jmetzz.laboratory.mockito.business;
 
 /**
  * Created by jean on 6/02/2017.
