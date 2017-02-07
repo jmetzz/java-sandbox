@@ -86,6 +86,7 @@
         <commons-io.version>2.5</commons-io.version>
         <spring.version>4.3.4.RELEASE</spring.version>
         <junit-params.version>1.0.6</junit-params.version>
+        <hibernate-jpa-2.0-api.version>1.0.1.Final</hibernate-jpa-2.0-api.version>
     </properties>
 
 
@@ -102,6 +103,12 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-beans</artifactId>
                 <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.hibernate.javax.persistence</groupId>
+                <artifactId>hibernate-jpa-2.0-api</artifactId>
+                <version>${hibernate-jpa-2.0-api.version}</version>
             </dependency>
 
             <dependency>
