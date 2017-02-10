@@ -16,7 +16,7 @@ import static org.mockito.Mockito.verify;
  * Created by jean on 6/02/2017.
  */
 @RunWith(MockitoJUnitRunner.class)
-public class TimeoutVerificationTest {
+public class _5_TimeoutVerificationTest {
 
     @Mock
     private Printer printer;

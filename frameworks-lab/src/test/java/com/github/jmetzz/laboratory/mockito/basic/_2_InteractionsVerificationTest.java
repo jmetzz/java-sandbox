@@ -19,7 +19,7 @@ import static org.mockito.internal.verification.VerificationModeFactory.times;
  * Created by jean on 6/02/2017.
  */
 @RunWith(MockitoJUnitRunner.class)
-public class InteractionsVerificationTest {
+public class _2_InteractionsVerificationTest {
 
     @Mock
     private Printer printer;

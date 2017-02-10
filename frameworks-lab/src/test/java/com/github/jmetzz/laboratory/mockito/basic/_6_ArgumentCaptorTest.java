@@ -21,7 +21,7 @@ import static org.mockito.internal.verification.VerificationModeFactory.times;
  * Created by jean on 6/02/2017.
  */
 @RunWith(MockitoJUnitRunner.class)
-public class ArgumentCaptorTest {
+public class _6_ArgumentCaptorTest {
 
     // instance of the class under test
     @InjectMocks

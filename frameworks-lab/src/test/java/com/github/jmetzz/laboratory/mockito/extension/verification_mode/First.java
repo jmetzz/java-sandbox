@@ -1,4 +1,4 @@
-package com.github.jmetzz.laboratory.mockito.basic.verification_mode;
+package com.github.jmetzz.laboratory.mockito.extension.verification_mode;
 
 import org.mockito.exceptions.Reporter;
 import org.mockito.exceptions.verification.VerificationInOrderFailure;

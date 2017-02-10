@@ -16,7 +16,7 @@ import static org.mockito.Mockito.verify;
  * Created by jean on 6/02/2017.
  */
 @RunWith(MockitoJUnitRunner.class)
-public class OrderVerificationTest {
+public class _4_OrderVerificationTest {
 
     @Mock
     private Printer printer;

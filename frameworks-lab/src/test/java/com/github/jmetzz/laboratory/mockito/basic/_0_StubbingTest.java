@@ -1,4 +1,4 @@
-package com.github.jmetzz.laboratory.mockito;
+package com.github.jmetzz.laboratory.mockito.basic;
 
 import com.github.jmetzz.laboratory.mockito.business.ConsolePrinter;
 import com.github.jmetzz.laboratory.mockito.business.Printer;
@@ -20,7 +20,7 @@ import static org.mockito.Mockito.doThrow;
  * Created by jean on 6/02/2017.
  */
 @RunWith(MockitoJUnitRunner.class)
-public class StringProcessorTest {
+public class _0_StubbingTest {
 
     @Mock
     private Printer printer;
