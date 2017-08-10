@@ -55,7 +55,7 @@ public class AppThreadPoolExecutor {
             executor.execute(new AtomicCounterRunnable(i, 1000));
         }
 
-        // Make sure executor stops
+        // Make sure e xecutor stops
         executor.shutdown();
 
         // Blocks until all tasks have completed execution after a shutdown request
