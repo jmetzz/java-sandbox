@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EclipseCodeFormatter">
+    <option name="defaultSettings" value="true" />
+    <option name="formatter" value="ECLIPSE" />
+    <option name="id" value="1487666319442" />
+    <option name="name" value="default" />
+    <option name="pathToConfigFileJava" value="C:/home/Documents/OHM.xml" />
+    <option name="selectedJavaProfile" value="OHM" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
