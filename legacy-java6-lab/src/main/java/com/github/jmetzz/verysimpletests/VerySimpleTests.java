@@ -5,6 +5,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.joda.time.LocalDateTime;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -14,12 +15,63 @@ import java.util.regex.Pattern;
 public class VerySimpleTests {
 
 
-    public static void main(String[] args) {
+    public static enum IDTYPE   {
+        USER("x-ravago-user"),  GROUP("x-ravago-group"),  SEARCH("x-ravago-search");
+
+        private String value;
+
+        private IDTYPE(String value) {
+            this.value = value;
+        }
+
+        public String getValue() {
+            return value;
+        }
+
+        @Override
+        public String toString() {
+            return value;
+        }
+    }
 
 
 
+    public enum CriteriaTag {
+        DRAFT(10),
+        NEED_ATTENTION(11),
+        TO_BE_ACCEPTED(20),
+        NEED_FOR_CREDIT(30),
+        VALIDATED(40),
+        NEED_FOR_ALLOCATION(50),
+        FAILED_CREDIT_CHECK(60),
+        ACCEPTED(70),
+        IN_DELIVERY(80);
 
 
+        private long id;
+
+        CriteriaTag(long id) {
+            this.id = id;
+        }
+
+        public long getId() {
+            return id;
+        }
+    }
+
+    public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
+
+
+        CriteriaTag[] tagsToRemove = {CriteriaTag.ACCEPTED, CriteriaTag.DRAFT};
+        System.out.format("Removing TAGs %s", Arrays.asList(tagsToRemove));
+
+
+        IDTYPE  e = IDTYPE.USER;
+
+        System.out.println(e.toString());
+
+
+/*
         List<String> stringList = new ArrayList<String>();
         stringList.add("AAAXXXDDD12");
         stringList.add("AAAXXXDDD12DDD");
@@ -68,7 +120,7 @@ public class VerySimpleTests {
         while (matcher.find()) {
             count++;
             System.out.println("found: " + count + " : " + matcher.start() + " - " + matcher.end());
-        }
+        }*/
 
 
 /*
