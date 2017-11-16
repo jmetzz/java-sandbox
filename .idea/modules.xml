@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/concurrency-lab/concurrency-lab.iml" filepath="$PROJECT_DIR$/concurrency-lab/concurrency-lab.iml" />
       <module fileurl="file://$PROJECT_DIR$/design-patterns-lab/design-patterns-lab.iml" filepath="$PROJECT_DIR$/design-patterns-lab/design-patterns-lab.iml" />
       <module fileurl="file://$PROJECT_DIR$/frameworks-lab/frameworks-lab.iml" filepath="$PROJECT_DIR$/frameworks-lab/frameworks-lab.iml" />
       <module fileurl="file://$PROJECT_DIR$/general-java-lab/general-java-lab.iml" filepath="$PROJECT_DIR$/general-java-lab/general-java-lab.iml" />
       <module fileurl="file://$PROJECT_DIR$/generics-lab/generics-lab.iml" filepath="$PROJECT_DIR$/generics-lab/generics-lab.iml" />
-      <module fileurl="file://$PROJECT_DIR$/json-transformation-lab/json-transformation-lab.iml" filepath="$PROJECT_DIR$/json-transformation-lab/json-transformation-lab.iml" />
       <module fileurl="file://$PROJECT_DIR$/lambdas-and-streams-lab/lambdas-and-streams-lab.iml" filepath="$PROJECT_DIR$/lambdas-and-streams-lab/lambdas-and-streams-lab.iml" />
       <module fileurl="file://$PROJECT_DIR$/sandbox-java.iml" filepath="$PROJECT_DIR$/sandbox-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/tdd-lab/tdd-lab.iml" filepath="$PROJECT_DIR$/tdd-lab/tdd-lab.iml" />

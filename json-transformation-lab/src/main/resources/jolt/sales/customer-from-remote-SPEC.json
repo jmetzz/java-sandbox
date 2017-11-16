@@ -1,9 +1,0 @@
-[
-  {
-    "operation": "shift",
-    "spec": {
-      "ref": "customerID",
-      "callsign":"callSign"
-    }
-  }
-]

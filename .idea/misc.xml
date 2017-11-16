@@ -17,6 +17,8 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/algorithms-and-challenges-lab/pom.xml" />
+        <option value="$PROJECT_DIR$/concurrency-lab/pom.xml" />
+        <option value="$PROJECT_DIR$/json-transformation-lab/pom.xml" />
         <option value="$PROJECT_DIR$/legacy-java6-lab/pom.xml" />
       </set>
     </option>

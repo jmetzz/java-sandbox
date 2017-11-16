@@ -30,7 +30,7 @@
         <!-- General -->
         <java.version>1.8</java.version>
 
-        <guava.version>19.0</guava.version>
+        <guava.version>23.0</guava.version>
         <joda.version>2.9</joda.version>
         <lombok.version>1.16.8</lombok.version>
 
@@ -85,8 +85,8 @@
         <commons-lang3.version>3.4</commons-lang3.version>
         <json-api.version>1.0</json-api.version>
         <commons-io.version>2.5</commons-io.version>
-        <spring.version>4.3.4.RELEASE</spring.version>
-        <junit-params.version>1.0.6</junit-params.version>
+        <spring.version>4.3.7.RELEASE</spring.version>
+        <junit-params.version>1.1.0</junit-params.version>
         <hibernate-jpa-2.0-api.version>1.0.1.Final</hibernate-jpa-2.0-api.version>
     </properties>
 

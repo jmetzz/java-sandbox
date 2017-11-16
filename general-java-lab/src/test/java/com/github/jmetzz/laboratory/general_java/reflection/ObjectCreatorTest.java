@@ -2,14 +2,8 @@ package com.github.jmetzz.laboratory.general_java.reflection;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import java.lang.reflect.InvocationTargetException;
-
-import javax.activity.InvalidActivityException;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
-import com.sun.javaws.exceptions.InvalidArgumentException;
 
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
@@ -23,7 +17,7 @@ public class ObjectCreatorTest {
 	@Test
 	@Parameters(method = "validParameters")
 	public void shouldCreateObject(String type, String value)
-			throws ClassNotFoundException, NoSuchMethodException, InvalidArgumentException{
+			throws ClassNotFoundException, NoSuchMethodException, IllegalArgumentException {
 		ObjectCreator creator = new ObjectCreator();
 		// When
 		Object o = creator.create(type, value);
@@ -33,17 +27,17 @@ public class ObjectCreatorTest {
 	@Test(expected = ClassNotFoundException.class)
 	@Parameters(method = "notValidTypes")
 	public void shouldFireExceptionDueToInvalidType(String type, String value)
-			throws ClassNotFoundException, NoSuchMethodException, InvalidArgumentException {
+			throws ClassNotFoundException, NoSuchMethodException, IllegalArgumentException {
 		ObjectCreator creator = new ObjectCreator();
 		// When
 		Object o = creator.create(type, value);
 		assertThat(o).isNotNull();
 	}
 
-	@Test(expected = InvalidArgumentException.class)
+	@Test(expected = IllegalArgumentException.class)
 	@Parameters(method = "notValidValues")
 	public void shouldFireExceptionDueToInvalidValue(String type, String value)
-			throws ClassNotFoundException, NoSuchMethodException, InvalidArgumentException {
+			throws ClassNotFoundException, NoSuchMethodException, IllegalArgumentException {
 		ObjectCreator creator = new ObjectCreator();
 		// When
 		Object o = creator.create(type, value);
@@ -61,16 +55,16 @@ public class ObjectCreatorTest {
 		};
 	}
 
-    private Object notValidTypes() {
-        return new Object[] {
-                new String[] { "java.lang.BooleanX", "truuuu" },
-                new String[] { "java.lang.ShortX", "5,55a" },
-                new String[] { "java.lang.IntegerX", "10,5a" },
-                new String[] { "java.lang.LongX", "10000a,12" },
-                new String[] { "java.lang.FloatX", "5.5a" },
-                new String[] { "java.lang.DoubleX", "6.6a" }
-        };
-    }
+	private Object notValidTypes() {
+		return new Object[] {
+				new String[] { "java.lang.BooleanX", "truuuu" },
+				new String[] { "java.lang.ShortX", "5,55a" },
+				new String[] { "java.lang.IntegerX", "10,5a" },
+				new String[] { "java.lang.LongX", "10000a,12" },
+				new String[] { "java.lang.FloatX", "5.5a" },
+				new String[] { "java.lang.DoubleX", "6.6a" }
+		};
+	}
 
 	private Object notValidValues() {
 		return new Object[] {

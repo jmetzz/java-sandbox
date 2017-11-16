@@ -1,9 +1,0 @@
-[
-  {
-    "operation": "shift",
-    "spec": {
-      "ID": "paymentDiscountID",
-      "description":"description"
-    }
-  }
-]

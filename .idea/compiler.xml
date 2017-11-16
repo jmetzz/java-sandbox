@@ -7,11 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="concurrency-lab" />
         <module name="design-patterns-lab" />
         <module name="general-java-lab" />
         <module name="generics-lab" />
-        <module name="json-transformation-lab" />
         <module name="lambdas-and-streams-lab" />
         <module name="tdd-lab" />
       </profile>
