@@ -1,4 +1,0 @@
-path=The absolute path where the target file is located
-test=The target file
-a=yes if the action associated to 'a' must be carried out. no otherwise
-b=yes if the action associated to 'b' must be carried out. no otherwise
